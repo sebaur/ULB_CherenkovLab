@@ -1,11 +1,9 @@
 # Instructions for the Cherenkov lab at the ULB
 
-This document exists in two versions:
-- *vademecum*: meant for the students as guideline for the experiments
-- *fullInstructions*: meant for assistants. Same as above but with significant extra information. For example exercise solutions, examples of the data and the analysis, some additional background inforamtion.
+This document exists in two versions: the basic version for the students as guideline for the experiments and the _full_ version for assistants which includesextra additional information and exercise solutions and examples of the data and the analysis.
 
 The file organisation is as follows:
-- Every section has its own `.tex` file, being combined in `main.tex`.
+- Every section has its own `.tex` file, being combined in `vademecum.tex`.
 - within these files, the additional information for assistants is included in the special environment
 ```
 \ifthenelse{\boolean{showAdditional}}{
@@ -14,5 +12,5 @@ The file organisation is as follows:
 \end{additional}
 }
 ```
-- The two files `vademecum.tex` and `fullInstructions.tex` then produce the two versios of the document.
+- Use `\documentclass[full]{labInstructions}` for the general document style. If the option `full` is included, the additional material is included in the pdf.
 - Usage of the `Makefile` is encouraged, in case of future changes of this structure.
