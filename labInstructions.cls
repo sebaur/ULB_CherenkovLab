@@ -32,7 +32,7 @@
 \RequirePackage{xargs}
 \RequirePackage{framed}
 \RequirePackage{xcolor}
-\renewenvironmentx{leftbar}[3][1=10pt, 2=5pt, 3=0.75\linewidth]%
+\renewenvironmentx{leftbar}[3][1=6pt, 2=5pt, 3=0.75\linewidth]%
 {\def\FrameCommand{{\color{lightgray}\vrule width #1 \hspace{#2}}}\MakeFramed {\hsize#3\advance\hsize-\width \FrameRestore}}%
 {\endMakeFramed}
 
@@ -48,7 +48,7 @@
 \parindent0em
 
 \titleformat{\section}
-  {\huge\scshape\bfseries\raggedright}
+  {\LARGE\scshape\bfseries\raggedright}
   {\thesection}{1em}
   {}
  

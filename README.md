@@ -1,6 +1,6 @@
 # Instructions for the Cherenkov lab at the ULB
 
-This document exists in two versions: the basic version for the students as guideline for the experiments and the _full_ version for assistants which includesextra additional information and exercise solutions and examples of the data and the analysis.
+This document exists in two versions: the basic version for the students as guideline for the experiments and the _full_ version for assistants which includes extra additional information and exercise solutions and examples of the data and the analysis.
 
 The file organisation is as follows:
 - Every section has its own `.tex` file, being combined in `vademecum.tex`.
