@@ -20,4 +20,22 @@ Ensuite, bas\'e sur les donn\'ees, calculer
 \end{minipage}
 }
 \end{center}
+
+\ifthenelse{\boolean{showAdditional}}{
+\begin{additional}
+\textbf{Validation de la precedure d'adjustement:}\\
+\includegraphics[width=\textwidth]{exampleAnalysis/LLFit_MC.pdf}\\
+\textbf{Dispositif 1:}\\
+\includegraphics[width=\textwidth]{exampleAnalysis/LLFit_Data_1pe.pdf}
+\begin{align}
+G &= \mu_{\text{best}}/e = 185963.82 \\
+\sigma_G &= \sigma_{\text{best}} / \mu_{\text{best}} = 21.52\%\\
+\langle n_{\mathrm{pe}}\rangle &= \text{n.a.}
+\end{align}
+\end{additional}
+}
+
+
+
+
 \pagebreak

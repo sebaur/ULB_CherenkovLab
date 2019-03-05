@@ -37,15 +37,14 @@
 {\endMakeFramed}
 
 \newenvironment{additional}%
-{\begin{leftbar}\begin{quotation}}%
+{\begin{leftbar}\begin{quotation}\noindent}
 {\end{quotation}\end{leftbar}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % general format and style
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\parindent0em
+\setlength{\parindent}{0pt}
 
 \titleformat{\section}
   {\LARGE\scshape\bfseries\raggedright}
