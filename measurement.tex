@@ -1,0 +1,144 @@
+\section{Prise de mesure}
+
+Pour cette manipulation, il vous est demandé de préparer le dispositif expérimental nécessaire à la prise de mesure. Cela implique, dans un premier temps, de :
+
+\begin{center}
+\fbox{
+\begin{minipage}{0.75\textwidth}
+\textbf{Se familiariser avec le dispositif :} 
+\begin{quote}
+\begin{itemize}
+\item vérifier le signal des différents PMs et de l'OM
+\item étudier l'efficacité des PMs
+\item calibrer l'ADC
+\item développer la logique d'acquisition de données
+\item mesurer le bruit de fond
+\end{itemize}
+\end{quote}
+\end{minipage}
+}
+\end{center}
+
+\subsection{Vérification du dispositif}
+A l'aide de l'oscilloscope, vérifiez le signal provenant des différents photo-multiplicateurs (PMs) et de l'OM. Transformez ensuite votre signal analogue en signal digital à l'aide du discriminateur et observez celui-ci sur l'oscilloscope.
+
+\subsection{Mesure de l'efficacité}
+
+Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dans votre dispositif. Vous devrez faire cette mesure en faisant varier dans un premier temps le seuil du PM pour lequel vous mesurer l'efficacité. Une fois la valeur optimale du seuil trouvée, répétez le processus en faisant cette fois varier la tension appliquée sur le PM en question. Pour ces deux mesures, veillez également à mesurer le taux d'évènements détectés par le PM dont vous mesurez l'efficacité. Pour effectuer ces mesures, vous avez à votre disposition un scaler NIM.
+
+
+\ifthenelse{\boolean{showAdditional}}{
+\begin{additional}
+\textbf{Dispositif muon :}
+\begin{quote}
+\begin{itemize}
+\item Mesure de l'efficacité de PM2
+\item Logique : (PM1 \& PM2 \& PM3) et (PM1 \& PM3)
+\item Mesure du rate de PM2
+\end{itemize}
+\end{quote}
+
+\textbf{Dispositif \'electrons :}
+\begin{quote}
+\begin{itemize}
+\item Mesure de l'efficacité de PM1
+\item Logique : (PM1 \& PM2 \& OM) et (PM2 \& OM)
+\item Mesure du rate de PM1
+\end{itemize}
+\end{quote}
+\end{additional}
+}
+
+\subsection{Calibration de l'ADC}
+
+Nous allons à présent procéder à la calibration du convertisseur analogique-numérique (ADC ou Analogue-to-Digital Converter). En effet, l'ADC vous donne des valeurs en ADC channel, il vous faut donc connaître à quelle charge équivaut un ADC channel.\\
+
+Pour cette calibration, il faut fournir une charge connue et constante à l'ADC. Pour cela, vous avez à votre disposition un générateur de courant continu.
+
+\ifthenelse{\boolean{showAdditional}}{
+\begin{additional}
+\begin{itemize}
+    \item Charge de l'ADC de l'ordre du pC $\to$ $Q\sim100$\,pC 
+    \item Utilisation d'une résistance: $U = RI$ avec $R = 2.2$\,k$\mathrm{\Omega}$
+    \item Sachant que $Q = I\mathrm{\Delta}t$, déterminer $\mathrm{\Delta}t$
+    \item Le gate est ensuite créé à l'aide du dual-timer
+\end{itemize}
+\end{additional}
+}
+
+\subsection{Prise de données}
+
+Afin de prendre les données nécessaires à la caractérisation de l'OM, nous devons réfléchir à la logique d'acquisition. Nous allons utiliser l'ADC que nous venons de calibrer et lui fournir le signal de l'OM ainsi qu'une porte logique (gate). Pour créer ce gate, nous avons besoin des modules logiques. Il nous faut réfléchir aux conditions dans lesquelles ont veut déclencher la prise de mesure. En d'autres termes, quand-est-ce que le signal de l'OM nous intéresse? Une fois que cela est clair, vous pouvez l'implémenter à l'aide des modules logiques. Il vous faudra ensuite vérifier que le signal de l'OM et votre porte logique sont en coïncidence à l'aide de l'oscilloscope. Lorsque vous avez effectué cette vérification, reliez le gate et le signal de l'OM à l'ADC pour commencer la prise de mesure.\\
+
+\textbf{Remarque :} Ayant plus d'évènements, la prise de mesure pour la manipulation utilisant les électrons est plus rapide. De ce fait, il vous sera demandé d'effectuer plusieurs mesures en faisant varier la tension. Que cela va-t-il influencer? \\
+
+\textbf{Attention :} Pour la manipulation utilisant les muons, veillez à changer le nom du fichier pour ne pas qu'il soit écrasé lors de la prise de mesure suivante.
+
+\ifthenelse{\boolean{showAdditional}}{
+\begin{additional}
+\textbf{Dispositif muon :}
+\begin{quote}
+\begin{itemize}
+\item \textbf{Gate :} (PM1 \& PM2 \& PM3) \& (OM \& !PM4)
+\item Faire passer le gate dans le dual-timer pour avoir des fenêtres de taille constante
+\item Vérifier que l'OM est en même temps que le gate
+\item On veut aussi le muon rate ($\sim 1$\,Hz) donc on passe (PM1 \& PM2 \& PM3) dans le scaler relié au PC
+\item Donner le gate et le signal à l'ADC (taux de coïncidence $\sim 0.2$\,Hz) et commencez la prise de mesure
+
+\end{itemize}
+\end{quote}
+
+\textbf{Dispositif électrons :}
+\begin{quote}
+\begin{itemize}
+\item \textbf{Gate :} PM1 \& PM2 \& OM
+\item Faire passer le gate dans le dual-timer pour avoir des fenêtres de tailles constantes
+\item Vérifier que l'OM est en même temps que le gate
+\item Donner les deux infos à l'ADC et prendre les mesures
+\item Prendre des mesures en fonction de la tension pour voir la variation de la position du pic de 1 pe
+\end{itemize}
+\end{quote}
+\end{additional}
+}
+
+\subsection{Mesure du bruit de fond}
+
+Intéressons nous au bruit de fond présent dans ces deux manipulations. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envois un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée. \\
+
+Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez implémenter la prise de mesure du bruit de fond. Une fois cette méthode mise en place, vous pouvez démarrer l'acquisition du bruit de fond. A l'aide de l'oscilloscope, pensez toutefois à vérifier que le signal de l'OM et votre gate arrivent en même temps à l'ADC.
+
+\ifthenelse{\boolean{showAdditional}}{
+\begin{additional}
+\textbf{Dispositif muon :}
+\begin{quote}
+\begin{itemize} 
+\item \textbf{Gate :} (PM1 \& PM2 \& PM3) \& (OM$_{\mathrm{delayed}}$) \& !(PM4)
+\begin{quote}
+    A l'aide d'un câble, on ajoute un délai de 50\,ns sur l'OM avant la logique\\
+    Cela permet la mesure du taux de fausses coïncidences\\
+    On obtient un taux très faible avec $\sim 1$ évènement par heure
+\end{quote}
+
+\item \textbf{Gate :} !(PM1 \& PM2 \& PM3) \& (OM) \& !(PM4)
+\begin{quote}
+    On s'intéresse ici à tous les évènements de l'OM qui ne sont pas dû à un photon Tcherenkov\\
+    A partir de cela, on peut néanmoins calculer le taux de fausses coïncidences\\
+    $R_{\mathrm{fc}} = 2 \cdot R_{\mathrm{mu}} \cdot R_{\mathrm{bf}} \cdot f $ \\
+    où $R_{\mathrm{fc}}$ est le taux de fausse coïncidence, $R_{\mathrm{\mu}}$ le taux de muons et $f$ est la fenêtre de temps.
+
+\end{quote}
+
+\end{itemize}
+\end{quote}
+
+\textbf{Dispositif électrons :}
+\begin{quote}
+\begin{itemize}
+\item \textbf{Gate :} PM1 \& PM2 \& OM$_{\mathrm{couvert}}$
+\item L'OM n'étant pas fixé au reste du dispositif, il est possible de le séparer physiquement à l'aide d'une couverture
+\end{itemize}
+\end{quote}
+\end{additional}
+}
+
+\pagebreak

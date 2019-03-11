@@ -1,62 +1,12 @@
-\section{Prise de donn\'ees}
-
-Pour cette manipulation, il vous est demandé de pr\'eparer le dispositif expérimental n\'ecessaire à la prise de mesure. Cela implique :
-
-\begin{center}
-\fbox{
-\begin{minipage}{0.75\textwidth}
-Dans un premier temps, de se familiariser avec le dispositif :
-\begin{itemize}
-\item \'etudier l'efficacit\'e des PMs,
-\item calibrer l'ADC,
-\item d\'evelopper la logique d'aquisition de donn\'ees.
-\end{itemize}
-\end{minipage}
-}
-\end{center}
-
-
-\subsection{Mesure de l'efficacit\'e}
-
-Il vous est demandé de mesurer l'efficacit\'e d'un des photo-multiplicateurs (PM) présents dans votre dispositif. Vous devrez faire cette mesure en faisant varier dans un premier temps le seuil du PM pour lequel vous mesurer l'efficacit\'e. Une fois la valeur optimale du seuil trouv\'ee, r\'epetez le processus en faisant cette fois varier la tension appliquée sur le PM en question. Pour ces deux mesures, veillez également à mesurer le taux d'\ev\`enements d\'etect/'es par le PM dont vous mesurez l'efficacit\'e.
-
-\ifthenelse{\boolean{showAdditional}}{
-\begin{additional}
-
-\textbf{Dispositif muon :}
-\begin{quote}
-\begin{itemize}
-\item Mesure de l'efficacite du PM2
-\item Logique d'acquisition : PM1&PM2&PM3 - PM1&PM3
-\item Mesure du rate du PM2
-\end{itemize}
-\end{quote}
-
-
-\textbf{Dispositif \'electron :}
-\begin{quote}
-\begin{itemize}
-\item Mesure de l'efficacite du PM1
-\item Logique d'acquisition : PM1&PM2&OM - PM2&OM
-\item Mesure du rate du PM1
-\end{itemize}
-\end{quote}
-}
-
-\subsection{Calibration de l'ADC}
-
-Nous allons \`a pr\'esent proc\'eder \`a la calibration de l'ADC. 
-
 \section{Analyse de donn\'ees}
 
 A pr\'esent, nous pouvons nous concentrer sur l'analyse des donn\'ees dans le but de caract\'eriser l'OM.
 
-En vous basant sur les donn\'ees, vous devrez calculer :
+En vous basant sur les donn\'ees, vous devrez calculer:
 \begin{center}
 \fbox{
 \begin{minipage}{0.75\textwidth}
 \textbf{Dispositif muon :}
-\begin{quote}
 \begin{itemize}
 \item le gain $G$ de l'OM,
 \item la r\'esolution $\sigma_\mathrm{G}$ de l'OM,
@@ -66,7 +16,24 @@ En vous basant sur les donn\'ees, vous devrez calculer :
 }
 \end{center}
 
+\ifthenelse{\boolean{showAdditional}}{
+\begin{additional}
+\textbf{Validation de la precedure d'adjustement:}\\
+\includegraphics[width=\textwidth]{exampleAnalysis/LLFit_MC.pdf}\\
+\textbf{Dispositif electrons:}\\
+\includegraphics[width=\textwidth]{exampleAnalysis/LLFit_Data_1pe.pdf}\\
+\begin{align}
+G &= \mu_{\text{best}}/e = 185963 \\
+\sigma_G &= \sigma_{\text{best}} / \mu_{\text{best}} = 21.52\%\\
+\langle n_{\mathrm{pe}}\rangle &= \text{n.a.}
+\end{align}
+{\centering
+\includegraphics[width=0.7\textwidth]{exampleAnalysis/Gain_Resolution_HV.pdf}\\}
+\textbf{Dispositif muons:}\\
+\end{additional}
+}
 
 
-\end{center}
+
+
 \pagebreak
