@@ -32,13 +32,13 @@
 \RequirePackage{xargs}
 \RequirePackage{framed}
 \RequirePackage{xcolor}
-\renewenvironmentx{leftbar}[3][1=6pt, 2=5pt, 3=0.75\linewidth]%
+\renewenvironmentx{leftbar}[3][1=6pt, 2=5pt, 3=0.8\linewidth]%
 {\def\FrameCommand{{\color{lightgray}\vrule width #1 \hspace{#2}}}\MakeFramed {\hsize#3\advance\hsize-\width \FrameRestore}}%
 {\endMakeFramed}
 
 \newenvironment{additional}%
-{\begin{leftbar}\begin{quotation}\noindent}
-{\end{quotation}\end{leftbar}}
+{\begin{leftbar}\noindent}
+{\end{leftbar}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
