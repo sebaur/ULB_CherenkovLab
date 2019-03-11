@@ -18,9 +18,10 @@ Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Ce spectro
 \textbf{Remarque :} Si on veut changer $I_t$ pour une valeur plus petite, on descend vers cette valeur. En revanche, si on veut augmenter cette valeur, on doit recommencer le cycle d'hystérèse. 
 
 \begin{figure}[!h]
-    \center{\includegraphics[width=0.5\textwidth]
-    {figures/Dispositif_1.png}}
-    \caption{\label{fig:dispo1} Dispositif expérimental de l'effet Tcherenkov produit par des électrons.}
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/Dispositif_1.png}
+    \caption{Dispositif expérimental de l'effet Tcherenkov produit par des électrons.}
+    \label{fig:dispo1} 
 \end{figure}
 
 Dans ce dispositif, sont également présent 2 photo-multiplicateurs (PMs) chacun relié à un scintillateur. Le premier (PM1) est situé entre la source et la plaque de quartz et nous permet de vérifier qu'un électron a été émis par la source. Le second PM confirme que l'électron a bien traversé le quartz. Ces PMs ont donc pour but d'assurer que le signal détecté par l'OM est en coïncidence avec un électron qui a produit des photons Tcherenkov.
@@ -29,15 +30,75 @@ Dans ce dispositif, sont également présent 2 photo-multiplicateurs (PMs) chacu
 
 Pour cette seconde manipulation, nous utilisons les muons atmosphériques afin d'obtenir l'émission Tcherenkov. Ce dispositif est composé de 4 scintillateurs chacun relié à un photo-multiplicateur (PM), d'un OM, une couche de plomb et d'un réservoir d'eau. Ce réservoir forme un angle de 45$^{\circ}$ avec la verticale. Les trois premiers PM (PM1, PM2 et PM3) assure la direction verticale du muon incident. La présence d'une couche de plomb avant le PM3 nous permet également de vérifier que le muon est suffisamment énergétique pour produire le rayonnement Tcherenkov avec l'angle souhaité. Un 4ème PM est placé au dessus de l'OM et est utilisé comme veto. Puisque les muons sont produits en "paquets", appelés muon bundles, ce veto exclu les évènements de l'OM qui seraient produits par un second muon plutôt que par un photon Tcherenkov.
 
-
 \begin{figure}[!h]
-    \center{\includegraphics[width=0.5\textwidth]
-    {figures/Dispositif_2.png}}
-    \caption{\label{fig:dispo2} Dispositif expérimental de l'effet Tcherenkov produit par des muons.}
+    \centering
+	\includegraphics[width=0.5\textwidth]{figures/Dispositif_2.png}
+    \caption{Dispositif expérimental de l'effet Tcherenkov produit par des muons.}
+    \label{fig:dispo2} 
 \end{figure}
 
 
 \subsection{Le matériel expérimental}
+
+
+\begin{figure}
+    \centering
+	\includegraphics[width=\textwidth]{figures/PMT_readout.png}
+    \caption{Schema du fonctionnement d'un photo-multiplicateur(PMT).}
+    \label{fig:dispo2} 
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.2\textwidth}
+        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/Alim1.png}
+        \caption{Alimentation de haute tension}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.2\textwidth}
+        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/Alim2.png}
+        \caption{Alimentation de haute tension}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.2\textwidth}
+        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/FanInFanOut.png}
+        \caption{Distributeur de signal \emph{fan-in-fan-out}}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.2\textwidth}
+        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/delay.png}
+        \caption{Delayeur de signal}
+    \end{subfigure}
+    
+	\vspace{1cm}
+    \begin{subfigure}[t]{0.2\textwidth}
+        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/scaler.png}
+        \caption{Scaler NIM}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.25\textwidth}
+        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/gate.png}
+        \caption{Scaler CAMAC}
+    \end{subfigure}    
+    \hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \includegraphics[height=0.3\textheight, width=\textwidth, keepaspectratio]{figures/Discriminateur.png}
+        \caption{Discriminateur}
+    \end{subfigure}
+
+	\vspace{1cm}    
+    \begin{subfigure}[t]{0.45\textwidth}
+        \includegraphics[height=0.3\textheight, width=\textwidth, keepaspectratio]{figures/UniteDeCoincidence_crop.png}
+        \caption{Unit{\'e} de co{\"i}ncidence}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \includegraphics[height=0.3\textheight, width=\textwidth, keepaspectratio]{figures/UniteLogiqueProgrammable.png}
+        \caption{Unit{\'e} logique programmable}
+    \end{subfigure}
+
+    \caption{Appareils utilis{\'e}s dans les dispositifs.}\label{fig:animals}
+\end{figure}
 
 
 \pagebreak
