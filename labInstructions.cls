@@ -34,7 +34,7 @@
 \RequirePackage{xargs}
 \RequirePackage{framed}
 \RequirePackage{xcolor}
-\renewenvironmentx{leftbar}[3][1=6pt, 2=5pt, 3=0.8\linewidth]%
+\renewenvironmentx{leftbar}[3][1=6pt, 2=12pt, 3=0.95\linewidth]%
 {\def\FrameCommand{{\color{lightgray}\vrule width #1 \hspace{#2}}}\MakeFramed {\hsize#3\advance\hsize-\width \FrameRestore}}%
 {\endMakeFramed}
 
@@ -48,6 +48,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setlength{\parindent}{0pt}
 
+\titleclass{\section}{top}
+\newcommand\sectionbreak{\clearpage}
+
 \titleformat{\section}
   {\LARGE\scshape\bfseries\raggedright}
   {\thesection}{1em}
@@ -57,3 +60,18 @@
   {\Large\bfseries\raggedright}
   {\thesubsection}{1em}
   {}
+
+\makeatletter         
+\def\@maketitle{
+	\raggedright
+	\includegraphics[height=2cm]{figures/logoulb1.png}\\[12ex]
+	\begin{center}
+		{\@title }\\[4ex] 
+		{\Large \@author}\\[4ex] 
+		\@date\\[4ex]
+		\vspace{2cm}
+		\includegraphics[width=0.5\textwidth]{figures/particles.png}
+		\vfill
+	\end{center}
+}
+\makeatother

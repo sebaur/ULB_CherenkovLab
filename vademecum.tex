@@ -6,17 +6,27 @@
 \documentclass[full]{labInstructions}
 
 \ifthenelse{\boolean{showAdditional}}{
-\title{{\Huge \scshape La physique des particules}\\{\Large Laboratoire PHYS-F-311}\\{\large\textit{-- Version Assistant --}}}
-}
-{\title{{\Huge \scshape La physique des particules}\\{\Large Laboratoire PHYS-F-311}\\}}
+\title{{\Huge \scshape Laboratoire de physique des particules}\\\vspace{0.5cm}{\Large Laboratoire PHYS-F-311 -- \textit{Version Assistants}}}}
+{\title{{\Huge \scshape Laboratoire de physique des particules}\\\vspace{0.5cm}{\Large Laboratoire PHYS-F-311}}}
 
-\date{}
+\author{Author list to be defined...}
+\date{\today}
 
 \begin{document}
 
 \maketitle
+\thispagestyle{empty}
+\setcounter{tocdepth}{2}
 \tableofcontents
-\newpage
+\setcounter{page}{1}
+\vspace{3cm}
+\ifthenelse{\boolean{showAdditional}}{
+\begin{additional}
+\textbf{Attention!}\\
+Cette version contient de l'information supplementaire pour les assistants, indiqu{\'e} par une barre grise du cot{\'e} gauche.
+\end{additional}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Introduction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -28,7 +38,7 @@
 \input{materiel.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Brief intro to stats
+% Brief intro to statistics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methodes d'analyse statistique}
 \subsection{MonteCarlo simulation}
