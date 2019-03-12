@@ -6,39 +6,44 @@
 \documentclass[full]{labInstructions}
 
 \ifthenelse{\boolean{showAdditional}}{
-\title{{\Huge \scshape L'effet Tcherenkov}\\{\Large Laboratoire PHYS-F-311}\\{\large\textit{--Version Assistant--}}}
+\title{{\Huge \scshape La physique des particules}\\{\Large Laboratoire PHYS-F-311}\\{\large\textit{-- Version Assistant --}}}
 }
-{\title{{\Huge \scshape L'effet Tcherenkov}\\{\Large Laboratoire PHYS-F-311}\\}}
+{\title{{\Huge \scshape La physique des particules}\\{\Large Laboratoire PHYS-F-311}\\}}
 
 \date{}
 
 \begin{document}
 
 \maketitle
-
+\tableofcontents
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Introduction
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{intro.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Description of the experiments
+% Common description of the materials
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{dispositifs.tex}
+\input{materiel.tex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Exercises
+% Brief intro to stats
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{exercises.tex}
+\section{Methodes d'analyse statistique}
+\subsection{MonteCarlo simulation}
+\subsection{Adjustement}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Measurement
+% Description of the Experiments
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{measurement.tex}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Analysis
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{analysis.tex}
+\input{Tcherenkov_electrons.tex}
+
+\input{Tcherenkov_muons.tex}
+
+\section{Dispositif: Temps de vie de muons}
+
+\section{Dispositif: L'arche cosmique}
 
 \end{document}
