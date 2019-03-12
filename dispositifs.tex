@@ -1,11 +1,44 @@
 \section{Les dispositifs expérimentaux}
 Dans cette section, nous allons introduire les deux dispositifs expérimentaux conçu pour la caractérisation des modules optiques (OMs) d'AMANDA.
 
+\subsection{Photomultiplicateurs}
+Chaque OM est composé d'un photmultiplicateur (PM) contenu dans une bulle de verre sous vide. Les PMs sont des détecteurs basés sur l'effet photoélectrique. Lorsq'un photon arrive à la photocathode, il arrache un électron par effet photoélectrique ; Le faible courant ainsi produit est ensuite amplifié par une série de dynodes afin d'obtenir un gain important. \\
+
+Le gain du photomultiplicateur est défini comme :
+
+\begin{equation}
+G = \frac{Q_{1pe}}{q_{e}} 
+\end{equation}
+
+où $Q_{1pe}$ est la charge du premier photo-électron (pe) et $q_{e}$ représente la charge d'un électron. La résolution du photomultiplicateur est donnée par :
+
+\begin{equation}
+\sigma_{G} =  \frac{\sigma_{1pe}}{Q_{1pe}} * 100
+\end{equation}
+
+où $\sigma_{1pe}$ est l'écart-type du pic du premier pe.
+
+\begin{figure}[!h]
+    \centering
+	\includegraphics[width=\textwidth]{figures/PMT_readout.png}
+    \caption{Schema du fonctionnement d'un photo-multiplicateur(PMT).}
+    \label{fig:PMT_readout} 
+\end{figure}
+
 \subsection{Dispositif 1: Effet Tcherenkov par des électrons}
 
 Cette manipulation utilise une source de radiation $\beta^+$ composée de Strontium $^{90}$Sr. Les électrons émis par la source traverse ensuite une plaque de quartz d'indice de réfraction  $n = 1.478$. Lors de leur passage, les électrons vont produire un rayonnement Tcherenkov qui pourra être détecté par l'OM. Dans ce dispositif, l'OM se trouve à une position fixe située à un angle de 45$^{\circ}$ par rapport à la direction d'émission des électrons. La source radioactive est combinée à un spectromètre qui va nous permettre de sélectionner l'énergie cinétique des électrons afin de récolter un maximum de rayonnement Tcherenkov dans l'OM. Pour déterminer l'intensité du courant à fournir au spectromètre pour obtenir des électrons de cette énergie, vous devrez d'abord résoudre l'exercice 2.\\
 
 Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Ce spectromètre est calibré sur la partie descendante de la courbe d'hystérèse, il vous faudra donc respecter les conditions d'utilisations décrites ci-dessous.\\
+
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/Dispositif_1.png}
+    \caption{Dispositif expérimental de l'effet Tcherenkov produit par des électrons.}
+    \label{fig:dispo1} 
+\end{figure}
 
 \textbf{Mode d'emploi du spectromètre :}
 \begin{quote}
@@ -15,14 +48,7 @@ Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Ce spectro
         \item Descendre à la valeur $I_t$ désirée
     \end{itemize}
 \end{quote}
-\textbf{Remarque :} Si on veut changer $I_t$ pour une valeur plus petite, on descend vers cette valeur. En revanche, si on veut augmenter cette valeur, on doit recommencer le cycle d'hystérèse. 
-
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{figures/Dispositif_1.png}
-    \caption{Dispositif expérimental de l'effet Tcherenkov produit par des électrons.}
-    \label{fig:dispo1} 
-\end{figure}
+\textbf{Remarque :} Si on veut changer $I_t$ pour une valeur plus petite, on descend vers cette valeur. En revanche, si on veut augmenter cette valeur, on doit recommencer le cycle d'hystérèse. \\
 
 Dans ce dispositif, sont également présent 2 photo-multiplicateurs (PMs) chacun relié à un scintillateur. Le premier (PM1) est situé entre la source et la plaque de quartz et nous permet de vérifier qu'un électron a été émis par la source. Le second PM confirme que l'électron a bien traversé le quartz. Ces PMs ont donc pour but d'assurer que le signal détecté par l'OM est en coïncidence avec un électron qui a produit des photons Tcherenkov.
 
@@ -40,12 +66,8 @@ Pour cette seconde manipulation, nous utilisons les muons atmosphériques afin d
 
 \subsection{Le matériel expérimental}
 
-\begin{figure}
-    \centering
-	\includegraphics[width=\textwidth]{figures/PMT_readout.png}
-    \caption{Schema du fonctionnement d'un photo-multiplicateur(PMT).}
-    \label{fig:PMT_readout} 
-\end{figure}
+Dans cette section, nous allons passer en revue les différents modules qui seront utile à la 
+
 
 \begin{figure}
     \centering
