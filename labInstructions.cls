@@ -13,6 +13,8 @@
 \RequirePackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \RequirePackage{ifthen}
 \RequirePackage{titlesec}
+\RequirePackage{subcaption}
+\RequirePackage[section]{placeins}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % boolean option to show additional stuff
