@@ -1,6 +1,6 @@
 \section{Dispositif: Effet Tcherenkov par des muons}
 
-Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours. 
+Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours. \\
 
 Pour cette manipulation, nous utilisons les muons atmosphériques afin d'obtenir l'émission Tcherenkov. Ce dispositif est composé de 4 scintillateurs chacun relié à un photo-multiplicateur (PM), d'un OM, une couche de plomb et d'un réservoir d'eau. Ce réservoir forme un angle de 45$^{\circ}$ avec la verticale. Les trois premiers PM (PM1, PM2 et PM3) assure la direction verticale du muon incident. La présence d'une couche de plomb avant le PM3 nous permet également de vérifier que le muon est suffisamment énergétique pour produire le rayonnement Tcherenkov avec l'angle souhaité. Un 4ème PM est placé au dessus de l'OM et est utilisé comme veto. Puisque les muons sont produits en "paquets", appelés muon bundles, ce veto exclu les évènements de l'OM qui seraient produits par un second muon plutôt que par un photon Tcherenkov.
 
@@ -14,7 +14,7 @@ Pour cette manipulation, nous utilisons les muons atmosphériques afin d'obtenir
 \subsection{Exercices Pr\'eparatoires}
 
 \subsubsection{Exercice 1}
-Calculez quelle sera l'angle d'\'emission du rayonnement Tcherenkov \'emis dans l’eau par des muons ($m_\mathrm{\mu} = 0.106$\,GeV/$c^2$) de $1.5$\,GeV/$c$ de quantit\'e de mouvement, sachant que l'indice de r\'efraction de l'eau \`a $20^\circ$C est $1.333$.
+Calculez quelle sera l'angle d'\'emission du rayonnement Tcherenkov \'emis dans l’eau par des muons ($m_\mathrm{\mu} = 0.106$\,GeV/$c^2$) de $1.5$\,GeV/$c$ de quantité de mouvement, sachant que l'indice de r\'efraction de l'eau \`a $20^\circ$C est $1.333$.
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -67,7 +67,7 @@ N_{\mathrm{pe}} &= \epsilon_\mathrm{q} \cdot T \cdot N_\mathrm{\gamma}^{\mathrm{
 
 \subsection{Prise de mesure}
 
-Pour cette manipulation, il vous est demandé de préparer le dispositif expérimental nécessaire à la prise de mesure. Cela implique, dans un premier temps, de :
+Pour cette manipulation, il vous est demandé de préparer le dispositif expérimental nécessaire à la prise de mesure. Cela implique, dans un premier temps, de :\\
 
 \begin{center}
 \fbox{
@@ -87,11 +87,12 @@ Pour cette manipulation, il vous est demandé de préparer le dispositif expéri
 \end{center}
 
 \subsubsection{Vérification du dispositif}
+Dans un premier temps, allumez votre dispositif et allumez la haute tension aux bornes des PM. Veillez ne pas changer la tension indiquée afin de ne pas endommager les PMs.\\
 A l'aide de l'oscilloscope, vérifiez le signal provenant des différents photo-multiplicateurs (PMs) et de l'OM. Transformez ensuite votre signal analogue en signal digital à l'aide du discriminateur et observez celui-ci sur l'oscilloscope.
 
 \subsubsection{Mesure de l'efficacité}
 
-Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dans votre dispositif. Vous devrez faire cette mesure en faisant varier dans un premier temps le seuil du PM pour lequel vous mesurer l'efficacité. Une fois la valeur optimale du seuil trouvée, répétez le processus en faisant cette fois varier la tension appliquée sur le PM en question. Pour ces deux mesures, veillez également à mesurer le taux d'évènements détectés par le PM dont vous mesurez l'efficacité. Pour effectuer ces mesures, vous avez à votre disposition un scaler NIM.
+Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dans votre dispositif. Vous devrez faire cette mesure en faisant varier dans un premier temps le seuil du PM pour lequel vous mesurer l'efficacité. Une fois la valeur optimale du seuil trouvée, répétez le processus en faisant cette fois varier la tension appliquée sur le PM en question. Pour ces deux mesures, veillez également à mesurer le taux d'évènements détectés par le PM dont vous mesurez l'efficacité. Pour effectuer ces mesures, vous avez à votre disposition un scaler NIM. De quel PM allez-vous mesurer l'efficacité ?
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -107,7 +108,7 @@ Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dan
 
 Nous allons à présent procéder à la calibration du convertisseur analogique-numérique (ADC ou Analogue-to-Digital Converter). En effet, l'ADC vous donne des valeurs en ADC channel, il vous faut donc connaître à quelle charge équivaut un ADC channel.\\
 
-Pour cette calibration, il faut fournir une charge connue et constante à l'ADC. Pour cela, vous avez à votre disposition un générateur de courant continu.
+Pour cette calibration, il faut fournir une charge connue et constante à l'ADC. Pour cela, vous avez à votre disposition un générateur de courant continu. Comment allez-vous procéder ? 
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -123,8 +124,6 @@ Pour cette calibration, il faut fournir une charge connue et constante à l'ADC.
 \subsubsection{Prise de données}
 
 Afin de prendre les données nécessaires à la caractérisation de l'OM, nous devons réfléchir à la logique d'acquisition. Nous allons utiliser l'ADC que nous venons de calibrer et lui fournir le signal de l'OM ainsi qu'une porte logique (gate). Pour créer ce gate, nous avons besoin des modules logiques. Il nous faut réfléchir aux conditions dans lesquelles ont veut déclencher la prise de mesure. En d'autres termes, quand-est-ce que le signal de l'OM nous intéresse? Une fois que cela est clair, vous pouvez l'implémenter à l'aide des modules logiques. Il vous faudra ensuite vérifier que le signal de l'OM et votre porte logique sont en coïncidence à l'aide de l'oscilloscope. Lorsque vous avez effectué cette vérification, reliez le gate et le signal de l'OM à l'ADC pour commencer la prise de mesure.\\
-
-\textbf{Remarque :} Ayant plus d'évènements, la prise de mesure pour la manipulation utilisant les électrons est plus rapide. De ce fait, il vous sera demandé d'effectuer plusieurs mesures en faisant varier la tension. Que cela va-t-il influencer? \\
 
 \textbf{Attention :} Pour la manipulation utilisant les muons, veillez à changer le nom du fichier pour ne pas qu'il soit écrasé lors de la prise de mesure suivante.
 
@@ -142,7 +141,7 @@ Afin de prendre les données nécessaires à la caractérisation de l'OM, nous d
 
 \subsubsection{Mesure du bruit de fond}
 
-Intéressons nous au bruit de fond présent dans ces deux manipulations. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envois un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée. \\
+Intéressons nous au bruit de fond présent dans votre manipulation. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envois un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée. \\
 
 Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez implémenter la prise de mesure du bruit de fond. Une fois cette méthode mise en place, vous pouvez démarrer l'acquisition du bruit de fond. A l'aide de l'oscilloscope, pensez toutefois à vérifier que le signal de l'OM et votre gate arrivent en même temps à l'ADC.
 
@@ -169,9 +168,9 @@ Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez 
 
 \subsection{Analyse de donn\'ees}
 
-A pr\'esent, nous pouvons nous concentrer sur l'analyse des donn\'ees dans le but de caract\'eriser l'OM.
+A présent, nous pouvons nous concentrer sur l'analyse des donn\'ees dans le but de caractériser l'OM.
 
-En vous basant sur les donn\'ees, vous devrez calculer:
+En vous basant sur les donn\'ees, vous devrez calculer:\\
 \begin{center}
 \fbox{
 \begin{minipage}{0.75\textwidth}

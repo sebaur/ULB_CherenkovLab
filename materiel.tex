@@ -56,32 +56,25 @@ Le largeur de la gaussienne du premier photo-électron (1pe) va nous donner la r
 
 Nous allons à présent passer une revue les différents modules utilisés pour la prise de données. \\
 
-\textbf{Alimentation} [figure \ref{fig:HV1}] :\\
+\textbf{Alimentation} [figure \ref{fig:HV}] :\\
 Les modules d'alimentations haute-tension permettent de contrôler la tension appliquées aux PMs et à l''OM.\\
 
-\textbf{Fan-in-fan-out (FIFO)} [figure  \ref{fig:fifo}] :\\
-Cette unité permet de dédoubler le signal. Il en existe 2 types:
-\begin{itemize}
-\item Logic FIFO : sort un signal logique
-\item Linear FIFO : sort un signal analogique\\
-\end{itemize}
+\textbf{Scaler} [figure \ref{fig:scaler1}] :\\
+Cette unité permet de compter les impulsions logiques entrantes. Le module de mesure standard CAMAC possède 12 entrées indépendantes. Il existe également des modules NIM possédant la même fonction. Ces derniers fonctionne sans acquisition de données et permettent de lire directement les résultats sur un écran intégré.\\
 
-
-\textbf{Unité de délai} [figure \ref{fig:delay}] :\\
-Cette unité sort un signal identique au signal d'entrée en lui ajoutant un délai.
 
 \begin{figure}[!h]
     \centering
     \begin{subfigure}[t]{0.2\textwidth}
         \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/Alim1.png}
         \caption{Alimentation de haute tension}
-        \label{fig:HV1}
+        \label{fig:HV}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.2\textwidth}
-        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/Alim2.png}
-        \caption{Alimentation de haute tension}
-        \label{fig:HV2}
+        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/scaler.png}
+        \caption{Scaler NIM}
+        \label{fig:scaler1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[t]{0.2\textwidth}
@@ -98,11 +91,11 @@ Cette unité sort un signal identique au signal d'entrée en lui ajoutant un dé
     
 	\vspace{1cm}
     \begin{subfigure}[t]{0.2\textwidth}
-        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/scaler.png}
-        \caption{Scaler NIM}
-        \label{fig:scaler1}
+        \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/NIM_TDC.png}
+        \caption{Time to Digital Converter (TDC)}
+        \label{fig:TDC}
     \end{subfigure}
-    \hfill
+    \hfill	
     \begin{subfigure}[t]{0.25\textwidth}
         \includegraphics[height=0.25\textheight, width=\textwidth, keepaspectratio]{figures/gate.png}
         \caption{Analogue to Digital Converter (ADC)}
@@ -131,8 +124,18 @@ Cette unité sort un signal identique au signal d'entrée en lui ajoutant un dé
     \label{fig:devices}
 \end{figure}
 
-\textbf{Scaler} [figure \ref{fig:scaler1}] :\\
-Cette unité permet de compter les impulsions logiques entrantes. Le module de mesure standard CAMAC possède 12 entrées indépendantes. Il existe également des modules NIM possédant la même fonction. Ces derniers fonctionne sans acquisition de données et permettent de lire directement les résultats sur un écran intégré.\\
+\textbf{Fan-in-fan-out (FIFO)} [figure  \ref{fig:fifo}] :\\
+Cette unité permet de dédoubler le signal. Il en existe 2 types:
+\begin{itemize}
+\item Logic FIFO : sort un signal logique
+\item Linear FIFO : sort un signal analogique\\
+\end{itemize}
+
+\textbf{Unité de délai} [figure \ref{fig:delay}] :\\
+Cette unité sort un signal identique au signal d'entrée en lui ajoutant un délai.\\
+
+\textbf{Time to Digital Converter (TDC)} [figure \ref{fig:}] :\\
+Ce module permet de reconnaître un évènement et de fournir une représentation digital du moment auquel il est survenu. Ces unités sont communément utilisées pour mesurer un interval de temps et le convertir en une sortie digitale.\\
 
 \textbf{Analogue to Digital Converter (ADC)} [figure \ref{fig:}] :\\
 Ce module mesure une charge ou une différence de potentiel. 
