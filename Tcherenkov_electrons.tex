@@ -1,10 +1,10 @@
 \section{Dispositif: Effet Tcherenkov par des électrons}
 
-Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours. 
+Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours. \\
 
 Cette manipulation utilise une source de radiation $\beta^+$ composée de Strontium $^{90}$Sr. Les électrons émis par la source traverse ensuite une plaque de quartz d'indice de réfraction  $n = 1.478$. Lors de leur passage, les électrons vont produire un rayonnement Tcherenkov qui pourra être détecté par l'OM. Dans ce dispositif, l'OM se trouve à une position fixe située à un angle de 45$^{\circ}$ par rapport à la direction d'émission des électrons. La source radioactive est combinée à un spectromètre qui va nous permettre de sélectionner l'énergie cinétique des électrons afin de récolter un maximum de rayonnement Tcherenkov dans l'OM. Pour déterminer l'intensité du courant à fournir au spectromètre pour obtenir des électrons de cette énergie, vous devrez d'abord résoudre l'exercice 2.\\
 
-Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Ce spectromètre est calibré sur la partie descendante de la courbe d'hystérèse, il vous faudra donc respecter les conditions d'utilisations décrites ci-dessous.\\
+Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Celui-ci est calibré sur la partie descendante de la courbe d'hystérèse, il vous faudra donc respecter les conditions d'utilisation décrites ci-dessous.\\
 
 \textbf{Mode d'emploi du spectromètre :}
 \begin{quote}
@@ -26,7 +26,7 @@ Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Ce spectro
 Dans ce dispositif, sont également présent 2 photo-multiplicateurs (PMs) chacun relié à un scintillateur. Le premier (PM1) est situé entre la source et la plaque de quartz et nous permet de vérifier qu'un électron a été émis par la source. Le second PM confirme que l'électron a bien traversé le quartz. Ces PMs ont donc pour but d'assurer que le signal détecté par l'OM est en coïncidence avec un électron qui a produit des photons Tcherenkov.
 
 
-\subsection{Exercices Pr\'eparatoires}
+\subsection{Exercices Préparatoires}
 
 \subsubsection{Exercice 1}
 Sachant que l'OM est placé à un angle de $45^\circ$ par rapport à la direction d'émission des électrons ($m_\mathrm{e} = 0.511$\,MeV/$c^2$) de la source de strontium, à quel courant faut-il régler le spectromètre pour récolter un maximum de rayonnement Tcherenkov dans l'OM, sachant que l'indice de réfraction du quartz est de $1.478$?\\
@@ -55,7 +55,7 @@ E_\mathrm{cin}&=E- m_\mathrm{e}\\
 }
 
 \subsubsection{Exercice 2}
-Calculer l'ordre de grandeur du nombre de photons \'emis entre $350$ et $500$\,nm par un 'electron de $1247$\,keV d'\'energie cin\'etique traversant une fen\^etre de quartz de 1\,mm d'\'epaisseur, sachant que pour ce domaine de longueurs d’onde, l'indice de r\'efraction du quartz varie de moins de 1\% et peut \^etre consid\'er'e constant ($1.478$). N\'egliger la perte d'\'energie de l'\'electron dans le quartz.\\ $\alpha = 1/137$
+Calculer l'ordre de grandeur du nombre de photons émis entre $350$ et $500$\,nm par un électron de $1247$\,keV d'énergie cinétique traversant une fenêtre de quartz de 1\,mm d'épaisseur, sachant que pour ce domaine de longueurs d’onde, l'indice de réfraction du quartz varie de moins de 1\% et peut être considéré constant ($1.478$). Négliger la perte d'énergie de l'électron dans le quartz.\\ $\alpha = 1/137$
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -70,11 +70,11 @@ N&=\frac{\pi}{137}\cdot\left(\frac{1}{350\,\mathrm{nm}}-\frac{1}{500\,\mathrm{nm
 }
 
 \subsubsection{Exercice 3}
-En supposant que le diam\`etre du collimateur plac\'e devant la photocathode de l'OM est de 6 cm et qu'il se trouve \`a 17\,cm de la fen\^etre de quartz, combien de photoelectrons l'OM peut-il enregistrer par \'electron de la source, en supposant la transmittance $T$ \`a 90\%, l'efficacit\'e quantique est de $\epsilon_\mathrm{q}=15\%$?
+En supposant que le diamètre du collimateur placé devant la photocathode de l'OM est de 6 cm et qu'il se trouve à 17\,cm de la fenêtre de quartz, combien de photoelectrons l'OM peut-il enregistrer par électron de la source, en supposant une transmittance $T$ de 90\% et sachant que l'efficacité quantique est de $\epsilon_\mathrm{q}=15\%$?
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
-Avec $N_\mathrm{\gamma}^{\mathrm{quartz}}$ trouv\'e avant, on obtient:
+Avec $N_\mathrm{\gamma}^{\mathrm{quartz}}$ trouvé avant, on obtient:
 \begin{align*}
 N_{\mathrm{pe}} &= \epsilon_\mathrm{q} \cdot T \cdot N_\mathrm{\gamma}^{\mathrm{OM}}\\
  &= \epsilon_\mathrm{q} \cdot T \cdot \frac{6\,\mathrm{cm}}{2\pi \cdot 17\,\mathrm{cm} \cdot\sin\Theta_\mathrm{c}} \cdot N_\mathrm{\gamma}^{\mathrm{quartz}}\\
@@ -86,7 +86,7 @@ N_{\mathrm{pe}} &= \epsilon_\mathrm{q} \cdot T \cdot N_\mathrm{\gamma}^{\mathrm{
 
 \subsection{Prise de mesure}
 
-Pour cette manipulation, il vous est demandé de préparer le dispositif expérimental nécessaire à la prise de mesure. Cela implique, dans un premier temps, de :
+Pour cette manipulation, il vous est demandé de préparer le dispositif expérimental nécessaire à la prise de mesure. Cela implique, dans un premier temps, de :\\
 
 \begin{center}
 \fbox{
@@ -106,11 +106,14 @@ Pour cette manipulation, il vous est demandé de préparer le dispositif expéri
 \end{center}
 
 \subsubsection{Vérification du dispositif}
-A l'aide de l'oscilloscope, vérifiez le signal provenant des différents photo-multiplicateurs (PMs) et de l'OM. Transformez ensuite votre signal analogue en signal digital à l'aide du discriminateur et observez celui-ci sur l'oscilloscope.
+Dans un premier temps, allumez votre dispositif et allumez la haute tension aux bornes des PM. Veillez ne pas changer la tension indiquée afin de ne pas endommager les PMs.\\
 
+Après avoir calculé l'intensité du courant à fournir au spectromètre, allumer également celui-ci en suivant les instructions fournies précédement.\\
+
+A l'aide de l'oscilloscope, vérifiez le signal provenant des différents photo-multiplicateurs (PMs) et de l'OM. Transformez ensuite votre signal analogue en signal digital à l'aide du discriminateur et observez celui-ci sur l'oscilloscope.
 \subsubsection{Mesure de l'efficacité}
 
-Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dans votre dispositif. Vous devrez faire cette mesure en faisant varier dans un premier temps le seuil du PM pour lequel vous mesurer l'efficacité. Une fois la valeur optimale du seuil trouvée, répétez le processus en faisant cette fois varier la tension appliquée sur le PM en question. Pour ces deux mesures, veillez également à mesurer le taux d'évènements détectés par le PM dont vous mesurez l'efficacité. Pour effectuer ces mesures, vous avez à votre disposition un scaler NIM.
+Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dans votre dispositif. Vous devrez faire cette mesure en faisant varier dans un premier temps le seuil du PM pour lequel vous mesurer l'efficacité. Une fois la valeur optimale du seuil trouvée, répétez le processus en faisant cette fois varier la tension appliquée sur le PM en question. Pour ces deux mesures, veillez également à mesurer le taux d'évènements détectés par le PM dont vous mesurez l'efficacité. Pour effectuer ces mesures, vous avez à votre disposition un scaler NIM. De quel PM allez-vous mesurer l'efficacité ?
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -126,7 +129,7 @@ Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dan
 
 Nous allons à présent procéder à la calibration du convertisseur analogique-numérique (ADC ou Analogue-to-Digital Converter). En effet, l'ADC vous donne des valeurs en ADC channel, il vous faut donc connaître à quelle charge équivaut un ADC channel.\\
 
-Pour cette calibration, il faut fournir une charge connue et constante à l'ADC. Pour cela, vous avez à votre disposition un générateur de courant continu.
+Pour cette calibration, il faut fournir une charge connue et constante à l'ADC. Pour cela, vous avez à votre disposition un générateur de courant continu. Comment allez-vous procéder ? 
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -141,11 +144,11 @@ Pour cette calibration, il faut fournir une charge connue et constante à l'ADC.
 
 \subsubsection{Prise de données}
 
-Afin de prendre les données nécessaires à la caractérisation de l'OM, nous devons réfléchir à la logique d'acquisition. Nous allons utiliser l'ADC que nous venons de calibrer et lui fournir le signal de l'OM ainsi qu'une porte logique (gate). Pour créer ce gate, nous avons besoin des modules logiques. Il nous faut réfléchir aux conditions dans lesquelles ont veut déclencher la prise de mesure. En d'autres termes, quand-est-ce que le signal de l'OM nous intéresse? Une fois que cela est clair, vous pouvez l'implémenter à l'aide des modules logiques. Il vous faudra ensuite vérifier que le signal de l'OM et votre porte logique sont en coïncidence à l'aide de l'oscilloscope. Lorsque vous avez effectué cette vérification, reliez le gate et le signal de l'OM à l'ADC pour commencer la prise de mesure.\\
+Afin de prendre les données nécessaires à la caractérisation de l'OM, nous devons réfléchir à la logique d'acquisition. Nous allons utiliser l'ADC que nous venons de calibrer et lui fournir le signal de l'OM ainsi qu'une porte logique (gate). Pour créer ce gate, nous avons besoin des modules logiques. Il nous faut réfléchir aux conditions dans lesquelles ont veut déclencher la prise de mesure. En d'autres termes, quand voulons nous considérer le signal de l'OM? \\
 
-\textbf{Remarque :} Ayant plus d'évènements, la prise de mesure pour la manipulation utilisant les électrons est plus rapide. De ce fait, il vous sera demandé d'effectuer plusieurs mesures en faisant varier la tension. Que cela va-t-il influencer? \\
+Une fois que vous avez déterminé cela, vous pouvez implémenter votre logique à l'aide des modules à votre disposition. Il vous faudra ensuite vérifier que le signal de l'OM et votre porte logique sont en coïncidence à l'aide de l'oscilloscope. Lorsque vous avez effectué cette vérification, reliez le gate et le signal de l'OM à l'ADC pour commencer acquisition.\\
 
-\textbf{Attention :} Pour la manipulation utilisant les muons, veillez à changer le nom du fichier pour ne pas qu'il soit écrasé lors de la prise de mesure suivante.
+\textbf{Remarque :} Ayant plus d'évènements, la prise de mesure pour cette manipulation est plus rapide. De ce fait, il vous sera demandé d'effectuer plusieurs mesures en faisant varier la tension. Faites un graphique du gain et de la résolution en fonction de la tension.\\
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -161,7 +164,7 @@ Afin de prendre les données nécessaires à la caractérisation de l'OM, nous d
 
 \subsubsection{Mesure du bruit de fond}
 
-Intéressons nous au bruit de fond présent dans ces deux manipulations. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envois un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée. \\
+Intéressons nous au bruit de fond présent dans cette manipulation. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envois un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée. \\
 
 Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez implémenter la prise de mesure du bruit de fond. Une fois cette méthode mise en place, vous pouvez démarrer l'acquisition du bruit de fond. A l'aide de l'oscilloscope, pensez toutefois à vérifier que le signal de l'OM et votre gate arrivent en même temps à l'ADC.
 
@@ -176,9 +179,9 @@ Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez 
 
 \subsection{Analyse de donn\'ees}
 
-A pr\'esent, nous pouvons nous concentrer sur l'analyse des donn\'ees dans le but de caract\'eriser l'OM.
+A présent, nous pouvons nous concentrer sur l'analyse des donn\'ees dans le but de caractériser l'OM.
 
-En vous basant sur les donn\'ees, vous devrez calculer:
+En vous basant sur les données, vous devrez calculer:
 \begin{center}
 \fbox{
 \begin{minipage}{0.75\textwidth}
