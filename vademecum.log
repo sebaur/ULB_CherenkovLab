@@ -1,0 +1,1132 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.11)  19 DEC 2019 11:32
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**vademecum.tex
+(./vademecum.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(./labInstructions.cls
+Document Class: labInstructions Generic style for lab instruction documents
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2018/03/25 v3.4c French support from the babel system
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count89
+)
+\l@acadian = a dialect from \language\l@french 
+\FB@nonchar=\count90
+Package babel Info: Making : an active character on input line 415.
+Package babel Info: Making ; an active character on input line 416.
+Package babel Info: Making ! an active character on input line 417.
+Package babel Info: Making ? an active character on input line 418.
+\FBguill@level=\count91
+\FB@everypar=\toks16
+\FB@Mht=\dimen104
+\mc@charclass=\count92
+\mc@charfam=\count93
+\mc@charslot=\count94
+\std@mcc=\count95
+\dec@mcc=\count96
+\c@FBcaption@count=\count97
+\listindentFB=\skip43
+\descindentFB=\skip44
+\labelwidthFB=\skip45
+\leftmarginFB=\skip46
+\parindentFFN=\dimen105
+\FBfnindent=\skip47
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen106
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen107
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip10
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks19
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks20
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks21
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count110
+\Gm@cntv=\count111
+\c@Gm@tempcnt=\count112
+\Gm@bindingoffset=\dimen117
+\Gm@wd@mp=\dimen118
+\Gm@odd@mp=\dimen119
+\Gm@even@mp=\dimen120
+\Gm@layoutwidth=\dimen121
+\Gm@layoutheight=\dimen122
+\Gm@layouthoffset=\dimen123
+\Gm@layoutvoffset=\dimen124
+\Gm@dimlist=\toks23
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip51
+\aftertitleunit=\skip52
+\ttl@plus=\dimen125
+\ttl@minus=\dimen126
+\ttl@toksa=\toks24
+\titlewidth=\dimen127
+\titlewidthlast=\dimen128
+\titlewidthfirst=\dimen129
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen130
+\captionmargin@=\dimen131
+\captionwidth=\dimen132
+\caption@tempdima=\dimen133
+\caption@indent=\dimen134
+\caption@parindent=\dimen135
+\caption@hangindent=\dimen136
+)
+\c@ContinuedFloat=\count113
+)
+\c@subfigure=\count114
+\c@subtable=\count115
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xargs/xargs.sty
+Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count116
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\xargs@max=\count117
+\xargs@toksa=\toks27
+\xargs@toksb=\toks28
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip53
+\fb@frw=\dimen137
+\fb@frh=\dimen138
+\FrameRule=\dimen139
+\FrameSep=\dimen140
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+(./vademecum.aux
+
+LaTeX Warning: Label `fig:PMT_readout' multiply defined.
+
+)
+\openout1 = `vademecum.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Info: Redefining \degres on input line 15.
+LaTeX Info: Redefining \dots on input line 15.
+LaTeX Info: Redefining \up on input line 15.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count118
+\scratchdimen=\dimen141
+\scratchbox=\box29
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen142
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks30
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<figures/logoulb1.png, id=1, 396.48125pt x 94.3525pt>
+File: figures/logoulb1.png Graphic file (type png)
+<use figures/logoulb1.png>
+Package pdftex.def Info: figures/logoulb1.png  used on input line 17.
+(pdftex.def)             Requested size: 239.12474pt x 56.9055pt.
+<figures/particles.png, id=2, 390.45876pt x 497.86pt>
+File: figures/particles.png Graphic file (type png)
+<use figures/particles.png>
+Package pdftex.def Info: figures/particles.png  used on input line 17.
+(pdftex.def)             Requested size: 241.84843pt x 308.37373pt.
+[1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figur
+es/logoulb1.png> <./figures/particles.png>] (./vademecum.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write3
+\openout3 = `vademecum.toc'.
+
+ (./intro.tex
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+<figures/cosmic_rays.png, id=20, 464.73625pt x 480.79625pt>
+File: figures/cosmic_rays.png Graphic file (type png)
+<use figures/cosmic_rays.png>
+Package pdftex.def Info: figures/cosmic_rays.png  used on input line 8.
+(pdftex.def)             Requested size: 270.86906pt x 280.2339pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+[2
+
+ <./figures/cosmic_rays.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+<figures/IceCube_Detector.png, id=31, 3438.09468pt x 1595.9625pt>
+File: figures/IceCube_Detector.png Graphic file (type png)
+<use figures/IceCube_Detector.png>
+Package pdftex.def Info: figures/IceCube_Detector.png  used on input line 39.
+(pdftex.def)             Requested size: 386.95897pt x 179.62326pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+) (./materiel.tex [3 <./figures/IceCube_Detector.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+<figures/Scintillateur.png, id=37, 958.3002pt x 237.5274pt>
+File: figures/Scintillateur.png Graphic file (type png)
+<use figures/Scintillateur.png>
+Package pdftex.def Info: figures/Scintillateur.png  used on input line 9.
+(pdftex.def)             Requested size: 483.69687pt x 119.89058pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+<figures/PMT_readout.png, id=38, 963.6pt x 274.1442pt>
+File: figures/PMT_readout.png Graphic file (type png)
+<use figures/PMT_readout.png>
+Package pdftex.def Info: figures/PMT_readout.png  used on input line 20.
+(pdftex.def)             Requested size: 483.69687pt x 137.61137pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+[4
+
+ <./figures/Scintillateur.png> <./figures/PMT_readout.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+<figures/SpectreEnCharge.png, id=44, 665.8476pt x 468.7914pt>
+File: figures/SpectreEnCharge.png Graphic file (type png)
+<use figures/SpectreEnCharge.png>
+Package pdftex.def Info: figures/SpectreEnCharge.png  used on input line 43.
+(pdftex.def)             Requested size: 338.58632pt x 238.37944pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
+
+ []
+
+<figures/Alim1.png, id=45, 262.0992pt x 501.5538pt>
+File: figures/Alim1.png Graphic file (type png)
+<use figures/Alim1.png>
+Package pdftex.def Info: figures/Alim1.png  used on input line 69.
+(pdftex.def)             Requested size: 95.53142pt x 182.80923pt.
+
+Underfull \hbox (badness 2772) in paragraph at lines 70--70
+[]\T1/cmr/m/n/10 (a) |Ali-men-ta-tion de
+ []
+
+<figures/scaler.png, id=46, 247.6452pt x 542.025pt>
+File: figures/scaler.png Graphic file (type png)
+<use figures/scaler.png>
+Package pdftex.def Info: figures/scaler.png  used on input line 75.
+(pdftex.def)             Requested size: 83.52185pt x 182.80562pt.
+<figures/FanInFanOut.png, id=47, 107.9232pt x 542.025pt>
+File: figures/FanInFanOut.png Graphic file (type png)
+<use figures/FanInFanOut.png>
+Package pdftex.def Info: figures/FanInFanOut.png  used on input line 81.
+(pdftex.def)             Requested size: 36.39862pt x 182.80562pt.
+<figures/delay.png, id=48, 92.5056pt x 542.025pt>
+File: figures/delay.png Graphic file (type png)
+<use figures/delay.png>
+Package pdftex.def Info: figures/delay.png  used on input line 87.
+(pdftex.def)             Requested size: 31.19882pt x 182.80562pt.
+<figures/NIM_TDC.png, id=49, 113.223pt x 228.3732pt>
+File: figures/NIM_TDC.png Graphic file (type png)
+<use figures/NIM_TDC.png>
+Package pdftex.def Info: figures/NIM_TDC.png  used on input line 94.
+(pdftex.def)             Requested size: 90.63725pt x 182.81728pt.
+
+Underfull \hbox (badness 1755) in paragraph at lines 95--95
+[]\T1/cmr/m/n/10 (e) |Time to Di-gi-tal
+ []
+
+<figures/gate.png, id=50, 361.35pt x 542.025pt>
+File: figures/gate.png Graphic file (type png)
+<use figures/gate.png>
+Package pdftex.def Info: figures/gate.png  used on input line 100.
+(pdftex.def)             Requested size: 120.92204pt x 181.38307pt.
+
+Underfull \hbox (badness 6157) in paragraph at lines 101--101
+[]\T1/cmr/m/n/10 (f) |Ana-logue to Di-gi-tal
+ []
+
+<figures/Discriminateur.png, id=51, 651.3936pt x 542.025pt>
+File: figures/Discriminateur.png Graphic file (type png)
+<use figures/Discriminateur.png>
+Package pdftex.def Info: figures/Discriminateur.png  used on input line 106.
+(pdftex.def)             Requested size: 217.65414pt x 181.11014pt.
+<figures/UniteDeCoincidence_crop.png, id=52, 654.7662pt x 515.526pt>
+File: figures/UniteDeCoincidence_crop.png Graphic file (type png)
+<use figures/UniteDeCoincidence_crop.png>
+Package pdftex.def Info: figures/UniteDeCoincidence_crop.png  used on input lin
+e 113.
+(pdftex.def)             Requested size: 217.66206pt x 171.37485pt.
+<figures/UniteLogiqueProgrammable.png, id=53, 644.6484pt x 542.025pt>
+File: figures/UniteLogiqueProgrammable.png Graphic file (type png)
+<use figures/UniteLogiqueProgrammable.png>
+Package pdftex.def Info: figures/UniteLogiqueProgrammable.png  used on input li
+ne 119.
+(pdftex.def)             Requested size: 217.66273pt x 183.01237pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./figures/SpectreEnCharge.png>]
+
+LaTeX Warning: Text page 6 contains only floats.
+
+
+Overfull \vbox (4.90852pt too high) has occurred while \output is active []
+
+
+[6 <./figures/Alim1.png> <./figures/scaler.png> <./figures/FanInFanOut.png> <./
+figures/delay.png> <./figures/NIM_TDC.png> <./figures/gate.png> <./figures/Disc
+riminateur.png> <./figures/UniteDeCoincidence_crop.png> <./figures/UniteLogique
+Programmable.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
+
+ []
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 La charge, pré
+                      sentée à l’entrée pendant un intervalle de tem...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 La charge, présenté
+                             e à l’entrée pendant un intervalle de tem...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ̀ (U+300)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 La charge, présentée à
+                                   l’entrée pendant un intervalle de tem...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 La charge, présentée à l’entré
+                                              e pendant un intervalle de tem...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...́e pendant un intervalle de temps fixé
+                                                   par un signal logique fou...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ̀ (U+300)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...s fixé par un signal logique fourni à
+                                                   l’ADC (gate), est accum...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...fourni à l’ADC (gate), est accumulé
+                                                  e sur un condensateur. Dan...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ... temps, on laisse le condensateur se dé
+                                                  charger au travers d’un ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...�un circuit RC et on compte le temps né
+                                                  cessaire à cette décha...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ̀ (U+300)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...RC et on compte le temps nécessaire à
+                                                   cette décharge. Pour se...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ...mpte le temps nécessaire à cette dé
+                                                  charge. Pour se faire, on ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ... d’un oscillateur, au moyen d’une é
+                                                  chelle de comptage (scaler...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 150--39
+
+ []
+
+(./Methode_Analyse.tex [7]
+! Undefined control sequence.
+<recently read> \url 
+                     
+l.4 \url
+        {https://github.com/zemrude/PHYS-F-311}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<figures/Hit_and_miss.png, id=76, 509.905pt x 376.40625pt>
+File: figures/Hit_and_miss.png Graphic file (type png)
+<use figures/Hit_and_miss.png>
+Package pdftex.def Info: figures/Hit_and_miss.png  used on input line 13.
+(pdftex.def)             Requested size: 338.58632pt x 249.95091pt.
+[8
+
+ <./figures/Hit_and_miss.png>]
+<figures/Inverse_transformation.png, id=81, 505.89pt x 376.40625pt>
+File: figures/Inverse_transformation.png Graphic file (type png)
+<use figures/Inverse_transformation.png>
+Package pdftex.def Info: figures/Inverse_transformation.png  used on input line
+ 24.
+(pdftex.def)             Requested size: 338.58632pt x 251.92667pt.
+ [9 <./figures/Inverse_transformation.png>]
+<figures/chi_2.png, id=87, 537.00626pt x 396.48125pt>
+File: figures/chi_2.png Graphic file (type png)
+<use figures/chi_2.png>
+Package pdftex.def Info: figures/chi_2.png  used on input line 72.
+(pdftex.def)             Requested size: 232.17242pt x 171.41527pt.
+<figures/chi_2_bestfit.png, id=88, 562.1pt x 393.47pt>
+File: figures/chi_2_bestfit.png Graphic file (type png)
+<use figures/chi_2_bestfit.png>
+Package pdftex.def Info: figures/chi_2_bestfit.png  used on input line 76.
+(pdftex.def)             Requested size: 246.68274pt x 172.67703pt.
+<figures/MaxLikelihood.png, id=89, 554.07pt x 397.485pt>
+File: figures/MaxLikelihood.png Graphic file (type png)
+<use figures/MaxLikelihood.png>
+Package pdftex.def Info: figures/MaxLikelihood.png  used on input line 96.
+(pdftex.def)             Requested size: 237.01411pt x 170.02971pt.
+<figures/MaxLikelihood_bestFit.png, id=90, 545.03625pt x 394.47375pt>
+File: figures/MaxLikelihood_bestFit.png Graphic file (type png)
+<use figures/MaxLikelihood_bestFit.png>
+Package pdftex.def Info: figures/MaxLikelihood_bestFit.png  used on input line 
+100.
+(pdftex.def)             Requested size: 237.01411pt x 171.54051pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./figures/chi_2.png> <./figures/chi_2_bestfit.png>]
+<figures/error.png, id=96, 528.97626pt x 409.53pt>
+File: figures/error.png Graphic file (type png)
+<use figures/error.png>
+Package pdftex.def Info: figures/error.png  used on input line 114.
+(pdftex.def)             Requested size: 290.22107pt x 224.68604pt.
+)
+(./Tcherenkov_electrons.tex [11 <./figures/MaxLikelihood.png> <./figures/MaxLik
+elihood_bestFit.png> <./figures/error.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+
+ []
+
+[12
+
+]
+<figures/Dispositif_1.png, id=108, 484.6908pt x 542.025pt>
+File: figures/Dispositif_1.png Graphic file (type png)
+<use figures/Dispositif_1.png>
+Package pdftex.def Info: figures/Dispositif_1.png  used on input line 55.
+(pdftex.def)             Requested size: 241.84843pt x 270.45769pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+<figures/Relation_Ecin_I.png, id=109, 581.0508pt x 407.121pt>
+File: figures/Relation_Ecin_I.png Graphic file (type png)
+<use figures/Relation_Ecin_I.png>
+Package pdftex.def Info: figures/Relation_Ecin_I.png  used on input line 72.
+(pdftex.def)             Requested size: 241.84843pt x 169.44904pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) detected at line 90
+ []
+
+[13 <./figures/Dispositif_1.png>] [14 <./figures/Relation_Ecin_I.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+[16]
+<exampleAnalysis/plots/Likelihood_MC.pdf, id=126, 650.43pt x 578.16pt>
+File: exampleAnalysis/plots/Likelihood_MC.pdf Graphic file (type pdf)
+<use exampleAnalysis/plots/Likelihood_MC.pdf>
+Package pdftex.def Info: exampleAnalysis/plots/Likelihood_MC.pdf  used on input
+ line 250.
+(pdftex.def)             Requested size: 198.67839pt x 176.59879pt.
+<exampleAnalysis/plots/LLH_Fit_MC.pdf, id=127, 578.16pt x 578.16pt>
+File: exampleAnalysis/plots/LLH_Fit_MC.pdf Graphic file (type pdf)
+<use exampleAnalysis/plots/LLH_Fit_MC.pdf>
+Package pdftex.def Info: exampleAnalysis/plots/LLH_Fit_MC.pdf  used on input li
+ne 250.
+(pdftex.def)             Requested size: 198.67839pt x 198.67143pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--250
+
+ []
+
+<exampleAnalysis/plots/Likelihood_Data_electron_VME.pdf, id=128, 650.43pt x 578
+.16pt>
+File: exampleAnalysis/plots/Likelihood_Data_electron_VME.pdf Graphic file (type
+ pdf)
+<use exampleAnalysis/plots/Likelihood_Data_electron_VME.pdf>
+Package pdftex.def Info: exampleAnalysis/plots/Likelihood_Data_electron_VME.pdf
+  used on input line 250.
+(pdftex.def)             Requested size: 198.67839pt x 176.59879pt.
+<exampleAnalysis/plots/LLH_Fit_electron_VME.pdf, id=129, 578.16pt x 578.16pt>
+File: exampleAnalysis/plots/LLH_Fit_electron_VME.pdf Graphic file (type pdf)
+<use exampleAnalysis/plots/LLH_Fit_electron_VME.pdf>
+Package pdftex.def Info: exampleAnalysis/plots/LLH_Fit_electron_VME.pdf  used o
+n input line 250.
+(pdftex.def)             Requested size: 198.67839pt x 198.67143pt.
+<exampleAnalysis/plots/Electron_Gain_Resolution_HV_VME.pdf, id=130, 722.7pt x 5
+78.16pt>
+File: exampleAnalysis/plots/Electron_Gain_Resolution_HV_VME.pdf Graphic file (t
+ype pdf)
+<use exampleAnalysis/plots/Electron_Gain_Resolution_HV_VME.pdf>
+Package pdftex.def Info: exampleAnalysis/plots/Electron_Gain_Resolution_HV_VME.
+pdf  used on input line 250.
+(pdftex.def)             Requested size: 309.05603pt x 247.24536pt.
+
+Underfull \vbox (badness 10000) detected at line 250
+ []
+
+[17 <./exampleAnalysis/plots/Likelihood_MC.pdf> <./exampleAnalysis/plots/LLH_Fi
+t_MC.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exampleAnalysis/plots/LLH_
+Fit_MC.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <./exampleAnalysis/plots/Likelihood_Data_electron_VME.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exampleAnalysis/plots/Like
+lihood_Data_electron_VME.pdf): PDF inclusion: multiple pdfs with page group inc
+luded in a single page
+> <./exampleAnalysis/plots/LLH_Fit_electron_VME.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exampleAnalysis/plots/LLH_
+Fit_electron_VME.pdf): PDF inclusion: multiple pdfs with page group included in
+ a single page
+>]) (./Tcherenkov_muons.tex [18 <./exampleAnalysis/plots/Electron_Gain_Resoluti
+on_HV_VME.pdf>]
+<figures/Dispositif_2.png, id=377, 485.6544pt x 542.025pt>
+File: figures/Dispositif_2.png Graphic file (type png)
+<use figures/Dispositif_2.png>
+Package pdftex.def Info: figures/Dispositif_2.png  used on input line 43.
+(pdftex.def)             Requested size: 241.84843pt x 269.9201pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19
+
+] [20 <./figures/Dispositif_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+<exampleAnalysis/plots/Chi2_MC.pdf, id=391, 650.43pt x 578.16pt>
+File: exampleAnalysis/plots/Chi2_MC.pdf Graphic file (type pdf)
+<use exampleAnalysis/plots/Chi2_MC.pdf>
+Package pdftex.def Info: exampleAnalysis/plots/Chi2_MC.pdf  used on input line 
+236.
+(pdftex.def)             Requested size: 198.67839pt x 176.59879pt.
+<exampleAnalysis/plots/Chi2_fit_MC.pdf, id=392, 578.16pt x 578.16pt>
+File: exampleAnalysis/plots/Chi2_fit_MC.pdf Graphic file (type pdf)
+<use exampleAnalysis/plots/Chi2_fit_MC.pdf>
+Package pdftex.def Info: exampleAnalysis/plots/Chi2_fit_MC.pdf  used on input l
+ine 236.
+(pdftex.def)             Requested size: 198.67839pt x 198.67143pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
+
+ []
+
+) [23 <./exampleAnalysis/plots/Chi2_MC.pdf> <./exampleAnalysis/plots/Chi2_fit_M
+C.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./exampleAnalysis/plots/Chi2
+_fit_MC.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>] [24
+
+] [25
+
+] (./vademecum.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6772 strings out of 492649
+ 98985 string characters out of 6129622
+ 192648 words of memory out of 5000000
+ 10478 multiletter control sequences out of 15000+600000
+ 19995 words of font info for 48 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 49i,20n,77p,905b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/cm-super/sfcc2488.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/cm-super/sfxc1728.pfb>
+Output written on vademecum.pdf (26 pages, 12017390 bytes).
+PDF statistics:
+ 548 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+

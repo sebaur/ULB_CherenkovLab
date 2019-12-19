@@ -1,6 +1,40 @@
 \section{Dispositif: Effet Tcherenkov par des muons}
+\label{sect:Tcherenkov_muon}
 
-Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours. \\
+Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours.
+
+\subsection{Agenda du laboratoire}
+\textbf{Lundi}
+\begin{itemize}
+\item Prise de connaissance avec le matériel
+\item Vérification du signal analogique des PMs avec l'oscilloscope.
+\item Implémentation de la table de vérité pour la logique d'acquisition ou trigger.
+\item Mesure de l'efficacité
+\end{itemize}
+\vspace{\baselineskip}
+\textbf{Mardi}
+\begin{itemize}
+\item Calibration de l'ADC
+\item Préparation de l'acquisition de données
+\item Début de l'acquisition de données avec LabView
+\end{itemize}
+\vspace{\baselineskip}
+\textbf{Mercredi}
+\begin{itemize}
+\item Construction de la logique d'acquisition du bruit de fond.
+\item Écriture de la table de vérité pour définir un événement du bruit.
+\item Début de l'acquisition de données pour le bruit de fond
+\end{itemize}
+\vspace{\baselineskip}
+\textbf{Jeudi et Vendredi}
+\begin{itemize}
+\item Développement d'un programme de génération MC d'une distribution normale
+\item Développement des programmes d'analyse.
+\item Dernier jour pour présenter les résultats des exercices.
+\item Préparation de la présentation.
+\end{itemize}
+
+\subsection{Dispositif expérimental}
 
 Pour cette manipulation, nous utilisons les muons atmosphériques afin d'obtenir l'émission Tcherenkov. Ce dispositif est composé de 4 scintillateurs chacun relié à un photo-multiplicateur (PM), d'un OM, une couche de plomb et d'un réservoir d'eau. Ce réservoir forme un angle de 45$^{\circ}$ avec la verticale. Les trois premiers PM (PM1, PM2 et PM3) assure la direction verticale du muon incident. La présence d'une couche de plomb avant le PM3 nous permet également de vérifier que le muon est suffisamment énergétique pour produire le rayonnement Tcherenkov avec l'angle souhaité. Un 4ème PM est placé au dessus de l'OM et est utilisé comme veto. Puisque les muons sont produits en "paquets", appelés muon bundles, ce veto exclu les évènements de l'OM qui seraient produits par un second muon plutôt que par un photon Tcherenkov.
 
@@ -168,9 +202,9 @@ Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez 
 
 \subsection{Analyse de donn\'ees}
 
-A présent, nous pouvons nous concentrer sur l'analyse des donn\'ees dans le but de caractériser l'OM.
+A présent, nous pouvons nous concentrer sur l'analyse des données dans le but de caractériser l'OM.
 
-En vous basant sur les donn\'ees, vous devrez calculer:\\
+En vous basant sur les données, vous devrez calculer:\\
 \begin{center}
 \fbox{
 \begin{minipage}{0.75\textwidth}

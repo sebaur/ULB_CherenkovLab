@@ -1,6 +1,40 @@
 \section{Dispositif: Effet Tcherenkov par des électrons}
+\label{sect:Tcherenkov_electron}
 
-Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours. \\
+Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours. 
+
+\subsection{Agenda du laboratoire}
+\textbf{Lundi}
+\begin{itemize}
+\item Prise de connaissance avec le matériel
+\item Vérification du signal analogique des PMs avec l'oscilloscope.
+\item Implémentation de la table de vérité pour la logique d'acquisition ou trigger.
+\item Mesure de l'efficacité
+\end{itemize}
+\vspace{\baselineskip}
+\textbf{Mardi}
+\begin{itemize}
+\item Calibration de l'ADC
+\item Préparation de l'acquisition de données
+\item Début de l'acquisition de données avec LabView
+\end{itemize}
+\vspace{\baselineskip}
+\textbf{Mercredi}
+\begin{itemize}
+\item Construction de la logique d'acquisition du bruit de fond.
+\item Écriture de la table de vérité pour définir un événement du bruit.
+\item Début de l'acquisition de données pour le bruit de fond
+\end{itemize}
+\vspace{\baselineskip}
+\textbf{Jeudi et Vendredi}
+\begin{itemize}
+\item Développement d'un programme de génération MC d'une distribution normale
+\item Développement des programmes d'analyse.
+\item Dernier jour pour présenter les résultats des exercices.
+\item Préparation de la présentation.
+\end{itemize}
+
+\subsection{Dispositif expérimental}
 
 Cette manipulation utilise une source de radiation $\beta^+$ composée de Strontium $^{90}$Sr. Les électrons émis par la source traverse ensuite une plaque de quartz d'indice de réfraction  $n = 1.478$. Lors de leur passage, les électrons vont produire un rayonnement Tcherenkov qui pourra être détecté par l'OM. Dans ce dispositif, l'OM se trouve à une position fixe située à un angle de 45$^{\circ}$ par rapport à la direction d'émission des électrons. La source radioactive est combinée à un spectromètre qui va nous permettre de sélectionner l'énergie cinétique des électrons afin de récolter un maximum de rayonnement Tcherenkov dans l'OM. Pour déterminer l'intensité du courant à fournir au spectromètre pour obtenir des électrons de cette énergie, vous devrez d'abord résoudre l'exercice 2.\\
 

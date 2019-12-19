@@ -4,7 +4,7 @@
 \LoadClass[11pt,a4paper,onecolumn]{article}
 
 \RequirePackage[utf8]{inputenc}
-\RequirePackage[francais]{babel}
+\RequirePackage[french]{babel}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
