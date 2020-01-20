@@ -15,7 +15,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{subcaption}
 \RequirePackage[section]{placeins}
-
+\RequirePackage{url}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % boolean option to show additional stuff
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
