@@ -1,0 +1,10 @@
+.DS_Store
+.vademecum.pdf.icloud
+*.log
+vademecum.aux
+vademecum.log
+vademecum.out
+vademecum.pdf
+vademecum.synctex.gz
+vademecum.toc
+
