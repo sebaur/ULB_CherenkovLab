@@ -1,7 +1,8 @@
 \section{Dispositif: Effet Tcherenkov par des muons}
 \label{sect:Tcherenkov_muon}
 
-L'effet Tcherenkov survient lorsqu'une particule chargée se déplace plus vite que la vitesse de la lumière dans un milieu diélectrique. Ce phénomène résulte de la superposition cohérente d'onde électromagnétique suite à la polarisation du milieu par le passage de la particule chargée. Si la vitesse de la particule est supérieure au ratio $c/n$ (où $n$ est l'indice de réfraction et $c$ la vitesse de la lumière), il y a formation d'un cône de lumière avec un angle de demi-ouverture $\Theta_c$ qui suit la relation:
+L'effet Tcherenkov survient lorsqu'une particule chargée se déplace plus vite que la vitesse de la lumière dans un milieu diélectrique. Ce phénomène résulte de la superposition cohérente d'onde électromagnétique suite à la polarisation du milieu par le passage de la particule chargée. Si la vitesse de la particule est supérieure au ratio $c/n$ (où $n$ est l'indice de réfraction et $c$ la vitesse de la lumière dans le vide), il y a formation d'un cône de lumière avec un angle de demi-ouverture $\Theta_c$ qui suit la relation:
+
 \begin{equation}
     cos\Theta_c = \frac{1}{n\beta}
 \end{equation}\\
@@ -11,7 +12,7 @@ où $\beta = v/c$, $v$ étant la vitesse de la particule dans le milieu. Le nomb
 \end{equation}\\
 avec $\alpha$ étant la constante de structure-fine. Comme le nombre de photons produits est inversement proportionnel à la longueur d'onde, la contribution des petites longueurs d'onde est plus importante.
 
-Compte tenu de leur faible section efficace d'interaction, la détection des neutrinos nécessite un détecteur de grand volume. Cela est réalisé par les détecteurs Tcherenkov en déployant des photo-multiplicateurs (PMs) dans un volume de matériau diélectrique. Chaque PM est contenu dans une bulle de verre sous vide, l'ensemble étant appelé module optique (OM). AMANDA (Antarctic Muon and Neutrino Detector Array) est un télescope à neutrino localisé au Pôle Sud. Lors de sa phase finale, le détecteur était composé de 677 modules optiques (OMs) disposés sur 19 câbles. Ces modules retourne un signal analogique. Après 9 ans d'activité, AMANDA a été officiellement incorporé dans au détecteur IceCube en 2005. IceCube (figure~\ref{fig:IceCube}) est un détecteur Tcherenkov d'un kilomètre cube enterré dans la glace du Pôle Sud. Il a pour but principal la détection des neutrinos à haute énergie. IceCube est composé de 5160 modules optiques digitaux (DOMs ou Digital Optical Modules) placés sur 86 câbles. Pour constituer un vaste réseaux d'OMs, il nous faut connaître la réponse de chacun de ceux-ci.
+Compte tenu de leur faible section efficace d'interaction, la détection des neutrinos nécessite un détecteur de grand volume. Cela est réalisé par les détecteurs Tcherenkov en déployant des photo-multiplicateurs (PMs) dans un volume de matériau diélectrique. Chaque PM est contenu dans une bulle de verre sous vide, l'ensemble étant appelé module optique (OM). AMANDA (Antarctic Muon and Neutrino Detector Array) est un télescope à neutrino localisé au Pôle Sud. Lors de sa phase finale, le détecteur était composé de 677 modules optiques (OMs) disposés sur 19 câbles. Ces modules retourne un signal analogique. Après 9 ans d'activité, AMANDA a été officiellement incorporé au détecteur IceCube en 2005. IceCube (figure~\ref{fig:IceCube}) est un détecteur Tcherenkov d'un kilomètre cube enterré dans la glace du Pôle Sud. Il a pour but principal la détection des neutrinos à haute énergie. IceCube est composé de 5160 modules optiques digitaux (DOMs ou Digital Optical Modules) placés sur 86 câbles. Pour constituer un vaste réseaux d'OMs, il nous faut connaître la réponse de chacun de ceux-ci.
 
 \begin{figure}
     \center{\includegraphics[width=0.8\textwidth]
@@ -19,7 +20,7 @@ Compte tenu de leur faible section efficace d'interaction, la détection des neu
     \caption{\label{fig:IceCube} Configuration du télescope à neutrinos IceCube.}
 \end{figure}
 
-Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours.
+Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite les données recueillies grâce aux outils statistiques et informatiques que vous aurez vu en cours.
 
 \subsection{Agenda du laboratoire}
 \begin{tabular}{p{0.2\linewidth} p{0.8\linewidth}}
@@ -44,7 +45,7 @@ Jeudi et Vendredi & - Développement d'un programme de génération MC d'une dis
 
 \subsection{Dispositif expérimental}
 
-Pour cette manipulation, nous utilisons les muons atmosphériques afin d'obtenir l'émission Tcherenkov. Ce dispositif est composé de 4 scintillateurs chacun relié à un photo-multiplicateur (PM), d'un OM, une couche de plomb et d'un réservoir d'eau (voir figure \ref{fig:dispo2}). Ce réservoir forme un angle de 45$^{\circ}$ avec la verticale. Les trois premiers PM (PM1, PM2 et PM3) assure la direction verticale du muon incident. La présence d'une couche de plomb avant le PM3 nous permet également de vérifier que le muon est suffisamment énergétique pour produire le rayonnement Tcherenkov avec l'angle souhaité. Un 4ème PM est placé au dessus de l'OM et est utilisé comme veto. Puisque les muons sont produits en "paquets", appelés muon bundles, ce veto exclu les évènements de l'OM qui seraient produits par un second muon plutôt que par un photon Tcherenkov.
+Pour cette manipulation, nous utilisons les muons atmosphériques afin d'obtenir l'émission Tcherenkov. Ce dispositif est composé de 4 scintillateurs chacun relié à un photo-multiplicateur (PM), d'un OM, une couche de plomb et d'un réservoir d'eau (voir figure \ref{fig:dispo2}). Ce réservoir forme un angle de 45$^{\circ}$ avec la verticale. Les trois premiers PMs (PM1, PM2 et PM3) assurent la direction verticale du muon incident. La présence d'une couche de plomb avant le PM3 nous permet également de vérifier que le muon est suffisamment énergétique pour produire le rayonnement Tcherenkov avec l'angle souhaité. Un 4ème PM est placé au dessus de l'OM et est utilisé comme veto. Puisque les muons sont produits en "paquets", appelés muon bundles, ce veto exclu les évènements de l'OM qui seraient produits par un second muon plutôt que par un photon Tcherenkov.
 
 \begin{figure}
     \centering
@@ -127,7 +128,7 @@ Pour cette manipulation, il vous est demandé de préparer le dispositif expéri
 \end{center}
 
 \subsubsection{Vérification du dispositif}
-Dans un premier temps, allumez votre dispositif et allumez la haute tension aux bornes des PM. Veillez ne pas changer la tension indiquée afin de ne pas endommager les PMs.\\
+Dans un premier temps, allumez votre dispositif et allumez la haute tension aux bornes des PMs. Veillez ne pas changer la tension indiquée afin de ne pas endommager les PMs.\\
 A l'aide de l'oscilloscope, vérifiez le signal provenant des différents photo-multiplicateurs (PMs) et de l'OM. Transformez ensuite votre signal analogue en signal digital à l'aide du discriminateur et observez celui-ci sur l'oscilloscope.
 
 \subsubsection{Mesure de l'efficacité}
@@ -181,7 +182,7 @@ Afin de prendre les données nécessaires à la caractérisation de l'OM, nous d
 
 \subsubsection{Mesure du bruit de fond}
 
-Intéressons nous au bruit de fond présent dans votre manipulation. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envois un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée.
+Intéressons nous au bruit de fond présent dans votre manipulation. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envoie un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée.
 
 Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez implémenter la prise de mesure du bruit de fond. Une fois cette méthode mise en place, vous pouvez démarrer l'acquisition du bruit de fond. A l'aide de l'oscilloscope, pensez toutefois à vérifier que le signal de l'OM et votre gate arrivent en même temps à l'ADC.
 
