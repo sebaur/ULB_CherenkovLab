@@ -18,17 +18,21 @@
 
 \maketitle
 \thispagestyle{empty}
+
 \setcounter{tocdepth}{2}
 \setlength{\parskip}{2pt}
 \tableofcontents
+\thispagestyle{empty}
 \setlength{\parskip}{8pt}
-\setcounter{page}{1}
-\vspace{3cm}
+
 \ifthenelse{\boolean{showAdditional}}{
+\pagebreak
+\thispagestyle{empty}
 \begin{additional}
 \textbf{Attention!}\\
 Cette version contient des informations supplémentaires destinées aux assistants. Celles-ci sont indiquées par une barre grise située sur le côté gauche.
 \end{additional}
+\pagebreak
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

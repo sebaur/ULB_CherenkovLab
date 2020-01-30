@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{labInstructions}[Generic style for lab instruction documents]
 
-\LoadClass[11pt,a4paper,onecolumn]{article}
+\LoadClass[11pt,a4paper,onecolumn,twoside]{article}
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[french]{babel}
@@ -16,6 +16,7 @@
 \RequirePackage{subcaption}
 \RequirePackage[section]{placeins}
 \RequirePackage{url}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % boolean option to show additional stuff
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,9 +62,11 @@
   {\thesubsection}{1em}
   {}
 
-%\titlespacing{\section}{0pt}{\parskip}{0pt}
-%\titlespacing{\subsection}{0pt}{\parskip}{0pt}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
+\RequirePackage{etoolbox}
+\pretocmd{\section}{\cleardoublepage}{}{}
+\RequirePackage{emptypage}
 
 \renewcommand{\arraystretch}{1.3}
 
