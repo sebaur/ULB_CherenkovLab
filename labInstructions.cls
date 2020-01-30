@@ -15,7 +15,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{subcaption}
 \RequirePackage[section]{placeins}
-
+\RequirePackage{url}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % boolean option to show additional stuff
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,10 +56,16 @@
   {\thesection}{1em}
   {}
  
-  \titleformat{\subsection}
+\titleformat{\subsection}
   {\Large\bfseries\raggedright}
   {\thesubsection}{1em}
   {}
+
+%\titlespacing{\section}{0pt}{\parskip}{0pt}
+%\titlespacing{\subsection}{0pt}{\parskip}{0pt}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
+\renewcommand{\arraystretch}{1.3}
 
 \makeatletter         
 \def\@maketitle{

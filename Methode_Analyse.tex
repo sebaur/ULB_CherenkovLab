@@ -10,7 +10,7 @@ Afin de développer votre méthode d'ajustement, il vous sera demandé, dans un 
 La méthode Hit $\&$ Miss ou méthode du rejet consiste à générer aléatoirement un grand nombre d'évènements et à ne sélectionner ensuite que ceux remplissant les conditions pré-établies, i.e. les évènements sous la courbe de la distribution choisie. 
 
 \begin{figure}[h!]
-\center{\includegraphics[width=0.7\textwidth]{figures/Hit_and_miss.png}}
+\center{\includegraphics[width=0.6\textwidth]{figures/Hit_and_miss.png}}
 \caption{Simulation obtenue par la méthode du Hit $\&$ Miss. Les points représentent les évènements générés aléatoirement. Les éléments en vert sont ceux qui ont remplissent la condition fixée pour suivre la distribution souhaitée. Les points rouges sont rejetés et auront donc été simulés en vain.}
 \label{fig:HitMiss}
 \end{figure}
@@ -21,7 +21,7 @@ Pour notre exemple illustré par la figure \ref{fig:Inverse}, la fonction $f(x)=
 A l'aide de cette méthode,  un échantillon aléatoire de nombres suivant une distribution donnée peut être directement produit. Les données aléatoires sont obtenues à partir de l'inverse de la fonction de répartition. Cette méthode se base sur le théorème de la réciproque. Dans un premier temps, il nous faut calculer l'inverse de notre fonction, $F(x)$, en fonction de $x$. Les évènements générés aléatoirement seront ensuite passé dans la fonction inverse afin d'obtenir la distribution souhaitée. 
 
 \begin{figure}[h!]
-\center{\includegraphics[width=0.7\linewidth]{figures/Inverse_transformation.png}}
+\center{\includegraphics[width=0.6\linewidth]{figures/Inverse_transformation.png}}
 \caption{Histogramme des évènements générés par la méthode de transformation inverse pour la distribution de Cauchy.}
 \label{fig:Inverse}
 \end{figure}

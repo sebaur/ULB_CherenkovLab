@@ -1,44 +1,51 @@
 \section{Dispositif: Effet Tcherenkov par des électrons}
 \label{sect:Tcherenkov_electron}
 
+L'effet Tcherenkov survient lorsqu'une particule chargée se déplace plus vite que la vitesse de la lumière dans un milieu diélectrique. Ce phénomène résulte de la superposition cohérente d'onde électromagnétique suite à la polarisation du milieu par le passage de la particule chargée. Si la vitesse de la particule est supérieure au ratio $c/n$ (où $n$ est l'indice de réfraction et $c$ la vitesse de la lumière), il y a formation d'un cône de lumière avec un angle de demi-ouverture $\theta_c$ qui suit la relation:
+\begin{equation}
+    cos\theta_c = \frac{1}{n\beta}
+\end{equation}\\
+où $\beta = v/c$, $v$ étant la vitesse de la particule dans le milieu. Le nombre de photons Tcherenkov émis par unité de longueur et de longeur d'onde est donné par la formule de Frank-Tamm:
+\begin{equation}
+     \frac{d^2N}{dx \, d\lambda} = \frac{2\pi \, \alpha}{\lambda^2} \; (1- \frac{1}{n^2 \, \beta^2} )
+\end{equation}\\
+avec $\alpha$ étant la constante de structure-fine. Comme le nombre de photons produits est inversement proportionnel à la longueur d'onde, la contribution des petites longueurs d'onde est plus importante.
+
+Compte tenu de leur faible section efficace d'interaction, la détection des neutrinos nécessite un détecteur de grand volume. Cela est réalisé par les détecteurs Tcherenkov en déployant des photo-multiplicateurs (PMs) dans un volume de matériau diélectrique. Chaque PM est contenu dans une bulle de verre sous vide, l'ensemble étant appelé module optique (OM). AMANDA (Antarctic Muon and Neutrino Detector Array) est un télescope à neutrino localisé au Pôle Sud. Lors de sa phase finale, le détecteur était composé de 677 modules optiques (OMs) disposés sur 19 câbles. Ces modules retourne un signal analogique. Après 9 ans d'activité, AMANDA a été officiellement incorporé dans au détecteur IceCube en 2005. IceCube (figure~\ref{fig:IceCube}) est un détecteur Tcherenkov d'un kilomètre cube enterré dans la glace du Pôle Sud. Il a pour but principal la détection des neutrinos à haute énergie. IceCube est composé de 5160 modules optiques digitaux (DOMs ou Digital Optical Modules) placés sur 86 câbles. Pour constituer un vaste réseaux d'OMs, il nous faut connaître la réponse de chacun de ceux-ci.
+
+\begin{figure}
+    \center{\includegraphics[width=0.8\textwidth]
+    {figures/IceCube_Detector.png}}
+    \caption{\label{fig:IceCube} Configuration du télescope à neutrinos IceCube.}
+\end{figure}
+
 Cette manipulation a pour but la caractérisation d'un module optique (OM) développé pour l'expérience AMANDA. Afin d'étudier les propriétés de cet OM, vous devrez mettre au point le dispositif nécessaire à la prise de mesure. Après avoir pris connaissance avec le dispositif, vous serez ainsi amené à développer vous même la logique d'acquisition des données. Vous analyserez ensuite celles-ci grâce aux outils statistiques et informatiques que vous aurez vu en cours. 
 
 \subsection{Agenda du laboratoire}
-\textbf{Lundi}
-\begin{itemize}
-\item Prise de connaissance avec le matériel
-\item Vérification du signal analogique des PMs avec l'oscilloscope.
-\item Implémentation de la table de vérité pour la logique d'acquisition ou trigger.
-\item Mesure de l'efficacité
-\end{itemize}
-\vspace{\baselineskip}
-\textbf{Mardi}
-\begin{itemize}
-\item Calibration de l'ADC
-\item Préparation de l'acquisition de données
-\item Début de l'acquisition de données avec LabView
-\end{itemize}
-\vspace{\baselineskip}
-\textbf{Mercredi}
-\begin{itemize}
-\item Construction de la logique d'acquisition du bruit de fond.
-\item Écriture de la table de vérité pour définir un événement du bruit.
-\item Début de l'acquisition de données pour le bruit de fond
-\end{itemize}
-\vspace{\baselineskip}
-\textbf{Jeudi et Vendredi}
-\begin{itemize}
-\item Développement d'un programme de génération MC d'une distribution normale
-\item Développement des programmes d'analyse.
-\item Dernier jour pour présenter les résultats des exercices.
-\item Préparation de la présentation.
-\end{itemize}
+\begin{tabular}{p{0.2\linewidth} p{0.8\linewidth}}
+Lundi & - Prise de connaissance avec le matériel\newline
+		- Vérification du signal analogique des PMs avec l'oscilloscope\newline
+		- Implémentation de la table de vérité pour la logique d'acquisition ou trigger\newline
+		- Mesure de l'efficacité\\
+
+Mardi & - Calibration de l'ADC\newline
+		- Préparation de l'acquisition de données\newline
+		- Début de l'acquisition de données avec LabView\\
+
+Mercredi & - Construction de la logique d'acquisition du bruit de fond\newline
+		- Écriture de la table de vérité pour définir un événement du bruit\newline
+		- Début de l'acquisition de données pour le bruit de fond\\
+
+Jeudi et Vendredi & - Développement d'un programme de génération MC d'une distribution normale\newline
+		- Développement des programmes d'analyse\newline
+		- Dernier jour pour présenter les résultats des exercices\newline
+		- Préparation de la présentation\newline
+\end{tabular} 
 
 \subsection{Dispositif expérimental}
+Cette manipulation utilise une source de radiation $\beta^+$ composée de Strontium $^{90}$Sr. Les électrons émis par la source traverse ensuite une plaque de quartz d'indice de réfraction  $n = 1.478$. Lors de leur passage, les électrons vont produire un rayonnement Tcherenkov qui pourra être détecté par l'OM. Dans ce dispositif, l'OM se trouve à une position fixe située à un angle de 45$^{\circ}$ par rapport à la direction d'émission des électrons (voir figure \ref{fig:dispo1}). La source radioactive est combinée à un spectromètre qui va nous permettre de sélectionner l'énergie cinétique des électrons afin de récolter un maximum de rayonnement Tcherenkov dans l'OM. Pour déterminer l'intensité du courant à fournir au spectromètre pour obtenir des électrons de cette énergie, vous devrez d'abord résoudre l'exercice 2.
 
-Cette manipulation utilise une source de radiation $\beta^+$ composée de Strontium $^{90}$Sr. Les électrons émis par la source traverse ensuite une plaque de quartz d'indice de réfraction  $n = 1.478$. Lors de leur passage, les électrons vont produire un rayonnement Tcherenkov qui pourra être détecté par l'OM. Dans ce dispositif, l'OM se trouve à une position fixe située à un angle de 45$^{\circ}$ par rapport à la direction d'émission des électrons. La source radioactive est combinée à un spectromètre qui va nous permettre de sélectionner l'énergie cinétique des électrons afin de récolter un maximum de rayonnement Tcherenkov dans l'OM. Pour déterminer l'intensité du courant à fournir au spectromètre pour obtenir des électrons de cette énergie, vous devrez d'abord résoudre l'exercice 2.\\
-
-Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Celui-ci est calibré sur la partie descendante de la courbe d'hystérèse, il vous faudra donc respecter les conditions d'utilisation décrites ci-dessous.\\
+Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Celui-ci est calibré sur la partie descendante de la courbe d'hystérèse, il vous faudra donc respecter les conditions d'utilisation décrites ci-dessous.
 
 \textbf{Mode d'emploi du spectromètre :}
 \begin{quote}
@@ -50,7 +57,7 @@ Une fois cette valeur trouvée, vous pouvez allumer le spectromètre. Celui-ci e
 \end{quote}
 \textbf{Remarque :} Si on veut changer $I_t$ pour une valeur plus petite, on descend vers cette valeur. En revanche, si on veut augmenter cette valeur, on doit recommencer le cycle d'hystérèse. 
 
-\begin{figure}[!h]
+\begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{figures/Dispositif_1.png}
     \caption{Dispositif expérimental de l'effet Tcherenkov produit par des électrons.}
@@ -61,17 +68,12 @@ Dans ce dispositif, sont également présent 2 photo-multiplicateurs (PMs) chacu
 
 
 \subsection{Exercices Préparatoires}
-
 \subsubsection{Exercice 1}
-Sachant que l'OM est placé à un angle de $45^\circ$ par rapport à la direction d'émission des électrons ($m_\mathrm{e} = 0.511$\,MeV/$c^2$) de la source de strontium, à quel courant faut-il régler le spectromètre pour récolter un maximum de rayonnement Tcherenkov dans l'OM, sachant que l'indice de réfraction du quartz est de $1.478$?\\
-
+Sachant que l'OM est placé à un angle de $45^\circ$ par rapport à la direction d'émission des électrons ($m_\mathrm{e} = 0.511$\,MeV/$c^2$) de la source de strontium, à quel courant faut-il régler le spectromètre pour récolter un maximum de rayonnement Tcherenkov dans l'OM, sachant que l'indice de réfraction du quartz est de $1.478$?
 Le graphique suivant vous donne la relation entre l'énergie cinétique des électrons et l'intensité du courant.
-
-\begin{figure}[!h]
-    \center{\includegraphics[width=0.5\textwidth]
-    {figures/Relation_Ecin_I.png}}
-    \caption{\label{fig:spectro} Relation entre l'intensité du courant fourni au spectromètre et l'énergie cinétique des électrons.}
-\end{figure}
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{figures/Relation_Ecin_I.png}
+\end{center}
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -117,11 +119,8 @@ N_{\mathrm{pe}} &= \epsilon_\mathrm{q} \cdot T \cdot N_\mathrm{\gamma}^{\mathrm{
 \end{additional}
 }
 
-
 \subsection{Prise de mesure}
-
-Pour cette manipulation, il vous est demandé de préparer le dispositif expérimental nécessaire à la prise de mesure. Cela implique, dans un premier temps, de :\\
-
+Pour cette manipulation, il vous est demandé de préparer le dispositif expérimental nécessaire à la prise de mesure. Cela implique, dans un premier temps, de :
 \begin{center}
 \fbox{
 \begin{minipage}{0.75\textwidth}
@@ -140,13 +139,13 @@ Pour cette manipulation, il vous est demandé de préparer le dispositif expéri
 \end{center}
 
 \subsubsection{Vérification du dispositif}
-Dans un premier temps, allumez votre dispositif et allumez la haute tension aux bornes des PM. Veillez ne pas changer la tension indiquée afin de ne pas endommager les PMs.\\
+Dans un premier temps, allumez votre dispositif et allumez la haute tension aux bornes des PM. Veillez ne pas changer la tension indiquée afin de ne pas endommager les PMs.
 
-Après avoir calculé l'intensité du courant à fournir au spectromètre, allumer également celui-ci en suivant les instructions fournies précédement.\\
+Après avoir calculé l'intensité du courant à fournir au spectromètre, allumer également celui-ci en suivant les instructions fournies précédement.
 
 A l'aide de l'oscilloscope, vérifiez le signal provenant des différents photo-multiplicateurs (PMs) et de l'OM. Transformez ensuite votre signal analogue en signal digital à l'aide du discriminateur et observez celui-ci sur l'oscilloscope.
-\subsubsection{Mesure de l'efficacité}
 
+\subsubsection{Mesure de l'efficacité}
 Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dans votre dispositif. Vous devrez faire cette mesure en faisant varier dans un premier temps le seuil du PM pour lequel vous mesurer l'efficacité. Une fois la valeur optimale du seuil trouvée, répétez le processus en faisant cette fois varier la tension appliquée sur le PM en question. Pour ces deux mesures, veillez également à mesurer le taux d'évènements détectés par le PM dont vous mesurez l'efficacité. Pour effectuer ces mesures, vous avez à votre disposition un scaler NIM. De quel PM allez-vous mesurer l'efficacité ?
 
 \ifthenelse{\boolean{showAdditional}}{
@@ -160,8 +159,7 @@ Il vous est ensuite demandé de mesurer l'efficacité d'un des PMs présents dan
 }
 
 \subsubsection{Calibration de l'ADC}
-
-Nous allons à présent procéder à la calibration du convertisseur analogique-numérique (ADC ou Analogue-to-Digital Converter). En effet, l'ADC vous donne des valeurs en ADC channel, il vous faut donc connaître à quelle charge équivaut un ADC channel.\\
+Nous allons à présent procéder à la calibration du convertisseur analogique-numérique (ADC ou Analogue-to-Digital Converter). En effet, l'ADC vous donne des valeurs en ADC channel, il vous faut donc connaître à quelle charge équivaut un ADC channel.
 
 Pour cette calibration, il faut fournir une charge connue et constante à l'ADC. Pour cela, vous avez à votre disposition un générateur de courant continu. Comment allez-vous procéder ? 
 
@@ -177,12 +175,11 @@ Pour cette calibration, il faut fournir une charge connue et constante à l'ADC.
 }
 
 \subsubsection{Prise de données}
+Afin de prendre les données nécessaires à la caractérisation de l'OM, nous devons réfléchir à la logique d'acquisition. Nous allons utiliser l'ADC que nous venons de calibrer et lui fournir le signal de l'OM ainsi qu'une porte logique (gate). Pour créer ce gate, nous avons besoin des modules logiques. Il nous faut réfléchir aux conditions dans lesquelles ont veut déclencher la prise de mesure. En d'autres termes, quand voulons nous considérer le signal de l'OM?
 
-Afin de prendre les données nécessaires à la caractérisation de l'OM, nous devons réfléchir à la logique d'acquisition. Nous allons utiliser l'ADC que nous venons de calibrer et lui fournir le signal de l'OM ainsi qu'une porte logique (gate). Pour créer ce gate, nous avons besoin des modules logiques. Il nous faut réfléchir aux conditions dans lesquelles ont veut déclencher la prise de mesure. En d'autres termes, quand voulons nous considérer le signal de l'OM? \\
+Une fois que vous avez déterminé cela, vous pouvez implémenter votre logique à l'aide des modules à votre disposition. Il vous faudra ensuite vérifier que le signal de l'OM et votre porte logique sont en coïncidence à l'aide de l'oscilloscope. Lorsque vous avez effectué cette vérification, reliez le gate et le signal de l'OM à l'ADC pour commencer acquisition.
 
-Une fois que vous avez déterminé cela, vous pouvez implémenter votre logique à l'aide des modules à votre disposition. Il vous faudra ensuite vérifier que le signal de l'OM et votre porte logique sont en coïncidence à l'aide de l'oscilloscope. Lorsque vous avez effectué cette vérification, reliez le gate et le signal de l'OM à l'ADC pour commencer acquisition.\\
-
-\textbf{Remarque :} Ayant plus d'évènements, la prise de mesure pour cette manipulation est plus rapide. De ce fait, il vous sera demandé d'effectuer plusieurs mesures en faisant varier la tension. Faites un graphique du gain et de la résolution en fonction de la tension.\\
+\textbf{Remarque :} Ayant plus d'évènements, la prise de mesure pour cette manipulation est plus rapide. De ce fait, il vous sera demandé d'effectuer plusieurs mesures en faisant varier la tension. Faites un graphique du gain et de la résolution en fonction de la tension.
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -197,8 +194,7 @@ Une fois que vous avez déterminé cela, vous pouvez implémenter votre logique 
 }
 
 \subsubsection{Mesure du bruit de fond}
-
-Intéressons nous au bruit de fond présent dans cette manipulation. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envois un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée. \\
+Intéressons nous au bruit de fond présent dans cette manipulation. Nous voulons connaître le taux de fausses coïncidences, càd les cas où l'OM nous envois un signal qui n'est pas dû à un photon Tcherenkov alors que notre porte logique s'est déclenchée.
 
 Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez implémenter la prise de mesure du bruit de fond. Une fois cette méthode mise en place, vous pouvez démarrer l'acquisition du bruit de fond. A l'aide de l'oscilloscope, pensez toutefois à vérifier que le signal de l'OM et votre gate arrivent en même temps à l'ADC.
 
@@ -212,7 +208,6 @@ Dans un premier temps, il vous faut réfléchir à la manière dont vous pouvez 
 }
 
 \subsection{Analyse de donn\'ees}
-
 A présent, nous pouvons nous concentrer sur l'analyse des donn\'ees dans le but de caractériser l'OM.
 
 En vous basant sur les données, vous devrez calculer:
