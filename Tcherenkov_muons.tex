@@ -1,9 +1,9 @@
 \section{Dispositif: Effet Tcherenkov par des muons}
 \label{sect:Tcherenkov_muon}
 
-L'effet Tcherenkov survient lorsqu'une particule chargée se déplace plus vite que la vitesse de la lumière dans un milieu diélectrique. Ce phénomène résulte de la superposition cohérente d'onde électromagnétique suite à la polarisation du milieu par le passage de la particule chargée. Si la vitesse de la particule est supérieure au ratio $c/n$ (où $n$ est l'indice de réfraction et $c$ la vitesse de la lumière), il y a formation d'un cône de lumière avec un angle de demi-ouverture $\theta_c$ qui suit la relation:
+L'effet Tcherenkov survient lorsqu'une particule chargée se déplace plus vite que la vitesse de la lumière dans un milieu diélectrique. Ce phénomène résulte de la superposition cohérente d'onde électromagnétique suite à la polarisation du milieu par le passage de la particule chargée. Si la vitesse de la particule est supérieure au ratio $c/n$ (où $n$ est l'indice de réfraction et $c$ la vitesse de la lumière), il y a formation d'un cône de lumière avec un angle de demi-ouverture $\Theta_c$ qui suit la relation:
 \begin{equation}
-    cos\theta_c = \frac{1}{n\beta}
+    cos\Theta_c = \frac{1}{n\beta}
 \end{equation}\\
 où $\beta = v/c$, $v$ étant la vitesse de la particule dans le milieu. Le nombre de photons Tcherenkov émis par unité de longueur et de longeur d'onde est donné par la formule de Frank-Tamm:
 \begin{equation}
@@ -77,32 +77,30 @@ Calculez quelle sera l'angle d'\'emission du rayonnement Tcherenkov \'emis dans 
 }
 
 \subsubsection{Exercice 2}
-\textbf{We should modify this to the muon setup!}\\
-Pour le 1er dispositif, calculer l'ordre de grandeur du nombre de photons \'emis entre $350$ et $500$\,nm par un 'electron de $1247$\,keV d'\'energie cin\'etique traversant une fen\^etre de quartz de 1\,mm d'\'epaisseur, sachant que pour ce domaine de longueurs d’onde, l'indice de r\'efraction du quartz varie de moins de 1\% et peut \^etre consid\'er'e constant ($1.478$). N\'egliger la perte d'\'energie de l'\'electron dans le quartz.\\ $\alpha = 1/137$
+Calculer l'ordre de grandeur du nombre de photons \'emis entre $350$ et $500$\,nm par un muon de $1.5$\,GeV/$c$ de quantité de mouvement traversant un réservoir d'eau de 10\,cm d'\'epaisseur, sachant que pour ce domaine de longueurs d’onde, l'indice de r\'efraction d'eau varie de moins de 1\% et peut \^etre consid\'er\'e constant ($1.333$). N\'egliger la perte d'\'energie du muon dans l'eau.\\ $\alpha = 1/137$
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
 Formule de \emph{Frank-Tamm}:
 \begin{align*}
 \frac{\mathrm{d}N}{\mathrm{d}x} &= \int_{\lambda_0}^{\lambda_1} \frac{2\pi\alpha z^2}{\lambda^2} \sin^2\Theta_\mathrm{c} \mathrm{d}\lambda\\
-&=\frac{\pi}{137}\int_{350\,\mathrm{nm}}^{500\,\mathrm{nm}}\frac{\mathrm{d}\lambda}{\lambda^2}\\
-N&=\frac{\pi}{137}\cdot\left(\frac{1}{350\,\mathrm{nm}}-\frac{1}{500\,\mathrm{nm}}\right)\cdot1\,\mathrm{mm}\\
-&=\boxed{19.65}
+&=\frac{0.868\pi}{137}\int_{350\,\mathrm{nm}}^{500\,\mathrm{nm}}\frac{\mathrm{d}\lambda}{\lambda^2}\\
+N&=\frac{0.868\pi}{137}\cdot\left(\frac{1}{350\,\mathrm{nm}}-\frac{1}{500\,\mathrm{nm}}\right)\cdot1\,\mathrm{cm}\\
+&=\boxed{1706}
 \end{align*}
 \end{additional}
 }
 
 \subsubsection{Exercice 3}
-\textbf{We should modify this to the muon setup!}\\
-En supposant que le diam\`etre du collimateur plac\'e devant la photocathode de l'OM est de 6 cm et qu'il se trouve \`a 17\,cm de la fen\^etre de quartz, combien de photoelectrons l'OM peut-il enregistrer par \'electron de la source, en supposant la transmittance $T$ \`a 90\%, l'efficacit\'e quantique est de $\epsilon_\mathrm{q}=15\%$?
+Les photons Tcherenkov sont produits \`a 1\,m de l'OM, devant lequel se trouve un collimateur de 10\,cm de diam\`etre. Combien de photoelectrons l'OM peut-il enregistrer par muon, en supposant la transmittance $T$ \`a 90\%, l'efficacit\'e quantique est de $\epsilon_\mathrm{q}=15\%$? L'absorption de photons dans l'eau peut \^etre négligé, ainsi que la réflexion de photons au bord du réservoir.
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
-Avec $N_\mathrm{\gamma}^{\mathrm{quartz}}$ trouv\'e avant, on obtient:
+Avec $N_\mathrm{\gamma}^{\mathrm{eau}}$ trouv\'e avant, on obtient:
 \begin{align*}
 N_{\mathrm{pe}} &= \epsilon_\mathrm{q} \cdot T \cdot N_\mathrm{\gamma}^{\mathrm{OM}}\\
- &= \epsilon_\mathrm{q} \cdot T \cdot \frac{6\,\mathrm{cm}}{2\pi \cdot 17\,\mathrm{cm} \cdot\sin\Theta_\mathrm{c}} \cdot N_\mathrm{\gamma}^{\mathrm{quartz}}\\
-&= \boxed{3.58}
+ &= \epsilon_\mathrm{q} \cdot T \cdot \frac{10\,\mathrm{cm}}{2\pi \cdot 100\,\mathrm{cm} \cdot\sin\Theta_\mathrm{c}} \cdot N_\mathrm{\gamma}^{\mathrm{eau}}\\
+&= \boxed{5.56}
 \end{align*}
 \end{additional}
 }
