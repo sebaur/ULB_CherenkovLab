@@ -11,14 +11,14 @@ La méthode Hit $\&$ Miss ou méthode du rejet consiste à générer aléatoirem
 
 \begin{figure}[h!]
 \center{\includegraphics[width=0.6\textwidth]{figures/Hit_and_miss.png}}
-\caption{Simulation obtenue par la méthode du Hit $\&$ Miss. Les points représentent les évènements générés aléatoirement. Les éléments en vert sont ceux qui ont remplissent la condition fixée pour suivre la distribution souhaitée. Les points rouges sont rejetés et auront donc été simulés en vain.}
+\caption{Simulation obtenue par la méthode du Hit $\&$ Miss. Les points représentent les évènements générés aléatoirement. Les éléments en vert sont ceux qui remplissent la condition fixée pour suivre la distribution souhaitée. Les points rouges sont rejetés et auront donc été simulés en vain.}
 \label{fig:HitMiss}
 \end{figure}
 
 Pour notre exemple, la fonction $f(x)=a(x^{2}-x^{4})$ a été choisie. La figure \ref{fig:HitMiss} illustre la méthode du Hit $\&$ Miss en indiquant en vert les points qui sont sous la courbe de la distribution que l'on souhaite reproduire. Les points rouges seront rejetés. Cette méthode demande donc plus de ressources afin d'obtenir suffisamment de statistique puisqu'une partie des évènements générés ne  sera finalement pas utilisée.
 
 \subsubsection{Transformation inverse}
-A l'aide de cette méthode,  un échantillon aléatoire de nombres suivant une distribution donnée peut être directement produit. Les données aléatoires sont obtenues à partir de l'inverse de la fonction de répartition. Cette méthode se base sur le théorème de la réciproque. Dans un premier temps, il nous faut calculer l'inverse de notre fonction, $F(x)$, en fonction de $x$. Les évènements générés aléatoirement seront ensuite passé dans la fonction inverse afin d'obtenir la distribution souhaitée. 
+A l'aide de cette méthode,  un échantillon aléatoire de nombres suivant une distribution donnée peut être directement produit. Les données aléatoires sont obtenues à partir de l'inverse de la fonction de répartition. Cette méthode se base sur le théorème de la réciproque. Dans un premier temps, il nous faut calculer l'inverse de notre fonction, $F(x)$, en fonction de $x$. Les évènements générés aléatoirement seront ensuite passés dans la fonction inverse afin d'obtenir la distribution souhaitée. 
 
 \begin{figure}[h!]
 \center{\includegraphics[width=0.6\linewidth]{figures/Inverse_transformation.png}}
@@ -52,7 +52,7 @@ Nous allons à présent développer la méthode d'ajustement sur les données qu
 \textbf{Remarque :} La minimisation n'est pas effectuée directement sur les données mais sur les données déjà représentées en histogramme.
 
 \subsubsection{Moindre carré - $\chi^{2}$}
-Considérons la distribution de nos évènements générés par MC  que l'on désire ajuster au mieux par une fonction $f(x)$ que choisie de manière pertinente en fonction du phénomène étudier. Nous cherchons les paramètres de cette fonction qui minimisent la somme des carrés des distances entre la hauteur de nos barres d'histogrammes, $y_i$, en $x_i$ et $f(x_i)$, autrement dit:
+Considérons la distribution de nos évènements générés par MC  que l'on désire ajuster au mieux par une fonction $f(x)$ choisie de manière pertinente en fonction du phénomène étudié. Nous cherchons les paramètres de cette fonction qui minimisent la somme des carrés des distances entre la hauteur de nos barres d'histogrammes, $y_i$, en $x_i$ et $f(x_i)$, autrement dit:
 
 \begin{equation}
 \chi^2 = \sum_{i=1}^{N} \left[ y_i - f(x_i) \right]^2 \, .
@@ -107,7 +107,7 @@ où $\sigma$ est l'écart type et $\mu$ est la moyenne. Nous allons à présent 
 \subsection{Erreur sur l'ajustement}
 Nous pouvons également estimer l'erreur associée à une valeur ajustée. Nous allons pour cela faire varier de l'unité choisie (1, 2, 3, ...) la valeur minimale de la méthode utilisée. Nous obtiendrons ainsi l'erreur en terme de $\sigma$. L'erreur sur le paramètre à ajuster nous indique alors dans quelle mesure ce paramètre varierait si on répétait le processus de minimisation plusieurs fois.
 
-Pour notre exemple, nous nous intéresseront à la méthode de maximum de vraisemblance. Nous ferons donc varier d'une unité la valeur minimale de  $-\log{\mathcal{L}}$. La barre noire sur le graphique \ref{fig:error} indique l'erreur sur $\mu$ ainsi obtenue.
+Pour notre exemple, nous nous intéresserons à la méthode de maximum de vraisemblance. Nous ferons donc varier d'une unité la valeur minimale de  $-\log{\mathcal{L}}$. La barre noire sur le graphique \ref{fig:error} indique l'erreur sur $\mu$ ainsi obtenue.
 
 
 \begin{figure}[h!]
