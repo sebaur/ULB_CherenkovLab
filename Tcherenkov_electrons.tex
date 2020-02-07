@@ -180,7 +180,7 @@ Afin de prendre les données nécessaires à la caractérisation de l'OM, nous d
 
 Une fois que vous avez déterminé cela, vous pouvez implémenter votre logique à l'aide des modules à votre disposition. Il vous faudra ensuite vérifier que le signal de l'OM et votre porte logique sont en coïncidence à l'aide de l'oscilloscope. Lorsque vous avez effectué cette vérification, reliez le gate et le signal de l'OM à l'ADC pour commencer acquisition.
 
-\textbf{Remarque :} Ayant plus d'évènements, la prise de mesure pour cette manipulation est plus rapide. De ce fait, il vous sera demandé d'effectuer plusieurs mesures en faisant varier la tension. Faites un graphique du gain et de la résolution en fonction de la tension.
+Ayant plus d'évènements, la prise de mesure pour cette manipulation est très rapide. De ce fait, il vous sera demandé d'effectuer plusieurs mesures en faisant varier la tension.
 
 \ifthenelse{\boolean{showAdditional}}{
 \begin{additional}
@@ -215,12 +215,12 @@ En vous basant sur les données, vous devrez calculer:
 \begin{center}
 \fbox{
 \begin{minipage}{0.75\textwidth}
-\textbf{Dispositif muon :}
 \begin{itemize}
-\item le gain $G$ de l'OM,
-\item la r\'esolution $\sigma_\mathrm{G}$ de l'OM,
+\item le gain $G = \mu_{\text{best}}/e$ de l'OM,
+\item la r\'esolution $\sigma_\mathrm{G} = \sigma_{\text{best}} / \mu_{\text{best}}$ de l'OM,
 \item le nombre moyen de photo-\'electrons $\langle n_{\mathrm{pe}}\rangle$ produit par trigger dans l'OM.
 \end{itemize}
+\textbf{Remarque:} Mettez en graphique tout les ajustements ainsi que le gain et la résolution en fonction de la tension.
 \end{minipage}
 }
 \end{center}
